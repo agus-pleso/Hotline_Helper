@@ -1,12 +1,68 @@
 country:
   iso_code: PH
   iso3: PHL
-  name: 'Philippines'
+  name: Philippines
   region: Asia
-emergency_services: []
-hotlines: []
+  subregion: South-eastern Asia
+
+emergency_services:
+  - name: Emergency Services
+    phone: "911"
+
+hotlines:
+  - id: ph-ncmh-1553
+    name: NCMH Crisis Hotline 1553
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "1553"
+      phone_alt: "1800-1888-1553"
+      website: https://doh.gov.ph/NCMH-Crisis-Hotline
+    languages: [tl, en]
+    hours:
+      type: 24/7
+    cost: free
+    operator: government
+    operator_name: National Center for Mental Health (NCMH) — attached agency of the Department of Health (DOH)
+    notes: |
+      Mandated under the Implementing Rules and Regulations of RA 11036
+      (Philippine Mental Health Act). 1553 is toll-free for Luzon-wide landlines.
+    source:
+      name: Department of Health Philippines — NCMH Crisis Hotline
+      url: https://doh.gov.ph/NCMH-Crisis-Hotline
+      type: government
+      last_verified: 2026-05-08
+
+  - id: ph-ncmh-mobile
+    name: NCMH Crisis Hotline (Mobile)
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "0917-899-8727"
+      phone_alt: "0919-057-1553"
+      website: https://doh.gov.ph/NCMH-Crisis-Hotline
+    languages: [tl, en]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: mobile users nationwide
+    operator: government
+    operator_name: NCMH / DOH
+    notes: SMART/TNT 0919-057-1553; GLOBE/TM 0917-899-8727; landline (+63-2-7989-8727).
+    source:
+      name: Department of Health Philippines — NCMH Crisis Hotline
+      url: https://doh.gov.ph/NCMH-Crisis-Hotline
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://doh.gov.ph/NCMH-Crisis-Hotline
+    - https://doh.gov.ph/press-release/launch-of-the-NCMH-crisis-hotline/
+  notes: |
+    Added in Wave 3 of country expansion. Cited gov source: Department of Health Philippines —
+    National Center for Mental Health (NCMH) Crisis Hotline page. Confirmed via multiple DOH
+    regional/hospital subdomains (zcmc.doh.gov.ph, vsmmc.doh.gov.ph, caro.doh.gov.ph,
+    bicol.doh.gov.ph). Hopeline (2919) — operator NGO — is not a primary DOH-published number
+    and is intentionally omitted.
+    Maintainer should re-verify each entry against the source page, then flip to verified.

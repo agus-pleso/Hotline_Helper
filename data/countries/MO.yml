@@ -1,12 +1,99 @@
 country:
   iso_code: MO
   iso3: MAC
-  name: 'Macao'
+  name: Macao
   region: Asia
-emergency_services: []
-hotlines: []
+  subregion: Eastern Asia
+
+emergency_services:
+  - name: Emergency Services
+    phone: "999"
+
+hotlines:
+  - id: mo-sunny-mood
+    name: 心晴熱線 (Sunny Mood Hotline)
+    categories: [mental_health, crisis, youth]
+    contacts:
+      phone: "+853 2871 2356"
+      website: https://www.gov.mo/zh-hant/news/1197670/
+    languages: [zh-hk, zh-cn, en]
+    hours:
+      type: 24/7
+    cost: free
+    operator: government
+    operator_name: Health Bureau (衛生局 / SSM) jointly with Macao Youth Development Service Centre
+    notes: |
+      Integrated with the "一戶通" (Macao One Account) app for booking and online assessments.
+      WeChat mini-program "澳青服" provides text and voice consultation.
+    source:
+      name: Macao SAR Government Portal — Sunny Mood Hotline announcement
+      url: https://www.gov.mo/zh-hant/news/1197670/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: mo-caritas-lifehope-zh
+    name: 明愛生命熱線 (Caritas Macau Lifehope Hotline — Chinese)
+    categories: [suicide, crisis, mental_health, domestic_violence]
+    contacts:
+      phone: "+853 2852 5222"
+      website: https://caritas.org.mo
+    languages: [zh-hk, zh-cn]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo_government_funded
+    operator_name: Caritas Macau (gov-listed; subsidised non-profit)
+    source:
+      name: Macao SAR Government Portal — Sunny Mood Hotline announcement
+      url: https://www.gov.mo/zh-hant/news/1197670/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: mo-caritas-lifehope-en-pt
+    name: Caritas Macau Lifehope Hotline (English & Portuguese)
+    categories: [suicide, crisis, mental_health]
+    contacts:
+      phone: "+853 2852 5777"
+      website: https://caritas.org.mo
+    languages: [en, pt]
+    hours:
+      type: custom
+      details: Sun–Tue 14:00–23:00; Thu–Sat 09:00–18:00; closed Wednesdays and public holidays (CST).
+    cost: free
+    target_population: English- and Portuguese-speaking residents and expats
+    operator: ngo_government_funded
+    operator_name: Caritas Macau (gov-listed)
+    source:
+      name: Macao SAR Government Portal — Sunny Mood Hotline announcement
+      url: https://www.gov.mo/zh-hant/news/1197670/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: mo-ias-counseling
+    name: 社會工作局輔導熱線 (IAS Counseling Hotline)
+    categories: [crisis, mental_health, domestic_violence]
+    contacts:
+      phone: "+853 2826 1126"
+      website: https://www.ias.gov.mo
+    languages: [zh-hk]
+    hours:
+      type: 24/7
+    cost: free
+    operator: government
+    operator_name: Social Welfare Bureau (Instituto de Acção Social / IAS)
+    source:
+      name: Macao SAR Government Portal — Sunny Mood Hotline announcement
+      url: https://www.gov.mo/zh-hant/news/1197670/
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://www.gov.mo/zh-hant/news/1197670/
+  notes: |
+    Added in Wave 3 of country expansion. Cited gov source: Macao SAR Government Portal
+    (gov.mo) — Sunny Mood Hotline announcement. The Health Bureau (SSM) main portal
+    returns 403 to bot fetches; the gov.mo press release is the working canonical source.
+    Maintainer should manually verify the IAS 24/7 hours claim and flip to verified.

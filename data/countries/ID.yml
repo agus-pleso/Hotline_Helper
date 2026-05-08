@@ -1,12 +1,45 @@
 country:
   iso_code: ID
   iso3: IDN
-  name: 'Indonesia'
+  name: Indonesia
   region: Asia
-emergency_services: []
-hotlines: []
+  subregion: South-eastern Asia
+
+emergency_services:
+  - name: Emergency Services
+    phone: "112"
+
+hotlines:
+  - id: id-healing119
+    name: Healing119.id (formerly SEJIWA / Sehat Jiwa)
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "119"
+      chat_url: https://www.healing119.id
+      website: https://www.healing119.id
+    languages: [id]
+    hours:
+      type: 24/7
+      details: 24/7 phone access; counselor-staffed hours expanding (queues reported).
+    cost: free
+    target_population: general public — youth, workers, caregivers, those with limited mental-health access
+    operator: government
+    operator_name: Kementerian Kesehatan Republik Indonesia (Kemenkes RI), in collaboration with PDSKJI
+    notes: Dial 119, then press extension 8 for mental-health counselling.
+    source:
+      name: Kemenkes — Direktorat Kesehatan Jiwa, Primer & Komunitas
+      url: https://kesprimkom.kemkes.go.id/konten/158/151/0/cegah-bunuh-diri-dukung-kesehatan-jiwa-kenali-layanan-healing119-id
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://kesprimkom.kemkes.go.id/konten/158/151/0/cegah-bunuh-diri-dukung-kesehatan-jiwa-kenali-layanan-healing119-id
+    - https://www.komdigi.go.id/berita/artikel/detail/pusat-panggilan-119-dan-laman-resmi-pdskji-kini-bisa-layani-konsultasi-kesehatan-jiwa
+  notes: |
+    Added in Wave 3 of country expansion. Cited gov source: Kementerian Kesehatan
+    (Indonesian Ministry of Health) — Direktorat Kesehatan Jiwa, Primer & Komunitas page.
+    Healing119.id is the gov-published mental-health service routed through the 119 emergency line.
+    Maintainer should re-verify each entry against the source page, then flip to verified.
