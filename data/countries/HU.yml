@@ -1,12 +1,124 @@
 country:
   iso_code: HU
   iso3: HUN
-  name: 'Hungary'
+  name: Hungary
   region: Europe
-emergency_services: []
-hotlines: []
+  subregion: Eastern Europe
+
+emergency_services:
+  - name: European Emergency Number
+    phone: "112"
+
+hotlines:
+  - id: hu-116-123-lesz
+    name: Magyar Lelki Elsősegély Telefonszolgálatok Szövetsége (LESZ)
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "116 123"
+      phone_alt: "+36 80 810 600"
+      website: https://sos116-123.hu
+    languages: [hu]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo
+    operator_name: Magyar Lelki Elsősegély Telefonszolgálatok Szövetsége (signposted by Egészségvonal)
+    source:
+      name: Egészségvonal.gov.hu — Lelkisegély szolgálatok
+      url: https://egeszsegvonal.gov.hu/maradj-egeszseges/lelki-egeszseg/lelkisegely/lelkisegely-szolgalatok.html
+      type: government
+      last_verified: 2026-05-08
+
+  - id: hu-116-111-kek-vonal
+    name: Kék Vonal Gyermekkrízis Alapítvány
+    categories: [crisis, youth, child_abuse]
+    contacts:
+      phone: "116 111"
+      chat_url: https://www.kek-vonal.hu
+      website: https://www.kek-vonal.hu
+    languages: [hu]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: children and youth
+    operator: ngo
+    operator_name: Kék Vonal Gyermekkrízis Alapítvány
+    source:
+      name: Egészségvonal.gov.hu — Lelkisegély szolgálatok
+      url: https://egeszsegvonal.gov.hu/maradj-egeszseges/lelki-egeszseg/lelkisegely/lelkisegely-szolgalatok.html
+      type: government
+      last_verified: 2026-05-08
+
+  - id: hu-okit
+    name: Országos Kríziskezelő és Információs Telefonszolgálat (OKIT)
+    categories: [domestic_violence, child_abuse, crisis, sexual_assault]
+    contacts:
+      phone: "+36 80 20 55 20"
+      chat_url: https://kapcsoljegybol.hu
+      website: https://bantalmazas.hu
+    languages: [hu]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: domestic-violence, child-abuse, and trafficking victims
+    operator: government
+    operator_name: SZGYF — Slachta Margit Nemzeti Szociálpolitikai Intézet
+    source:
+      name: Egészségvonal.gov.hu — Lelkisegély szolgálatok
+      url: https://egeszsegvonal.gov.hu/maradj-egeszseges/lelki-egeszseg/lelkisegely/lelkisegely-szolgalatok.html
+      type: government
+      last_verified: 2026-05-08
+
+  - id: hu-delutan-elderly
+    name: DélUtán Alapítvány
+    categories: [mental_health, crisis, elder_abuse]
+    contacts:
+      phone: "+36 80 200 866"
+      website: http://www.delutan.hu
+    languages: [hu]
+    hours:
+      type: custom
+      details: Daily 18:00–21:00 (CET/CEST).
+    cost: free
+    target_population: elderly
+    operator: ngo
+    operator_name: DélUtán Alapítvány (signposted by Egészségvonal)
+    source:
+      name: Egészségvonal.gov.hu — Lelkisegély szolgálatok
+      url: https://egeszsegvonal.gov.hu/maradj-egeszseges/lelki-egeszseg/lelkisegely/lelkisegely-szolgalatok.html
+      type: government
+      last_verified: 2026-05-08
+
+  - id: hu-hatter-lgbtqi
+    name: Háttér LMBTQI+ Segélyszolgálat
+    categories: [crisis, mental_health, lgbtq, discrimination]
+    contacts:
+      phone: "1373"
+      phone_alt: "+36 1 329 3380"
+      chat_url: https://lelkisegely.hatter.hu
+      website: https://hatter.hu
+    languages: [hu]
+    hours:
+      type: custom
+      details: Daily 18:00–23:00 (CET/CEST).
+    cost: free
+    target_population: LGBTQI+ community
+    operator: ngo
+    operator_name: Háttér Társaság (signposted by Egészségvonal)
+    source:
+      name: Egészségvonal.gov.hu — Lelkisegély szolgálatok
+      url: https://egeszsegvonal.gov.hu/maradj-egeszseges/lelki-egeszseg/lelkisegely/lelkisegely-szolgalatok.html
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://egeszsegvonal.gov.hu/maradj-egeszseges/lelki-egeszseg/lelkisegely/lelkisegely-szolgalatok.html
+  notes: |
+    Added in Wave 2 of country expansion. Cited gov source: Egészségvonal.gov.hu —
+    Hungary's National Health Information Service (operated by NNGYK — National Center
+    for Public Health and Pharmacy). Page is comprehensive; only the highest-priority
+    services are reproduced here.
+    Maintainer should re-verify each entry against the source page, then flip to verified.

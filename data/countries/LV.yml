@@ -1,12 +1,99 @@
 country:
   iso_code: LV
   iso3: LVA
-  name: 'Latvia'
+  name: Latvia
   region: Europe
-emergency_services: []
-hotlines: []
+  subregion: Northern Europe
+
+emergency_services:
+  - name: European Emergency Number
+    phone: "112"
+
+hotlines:
+  - id: lv-116-123-nvd
+    name: Vienota bezmaksas krīžu līnija 116 123
+    categories: [suicide, mental_health, crisis, domestic_violence]
+    contacts:
+      phone: "116 123"
+      website: https://www.vmnvd.gov.lv/lv/116123
+    languages: [lv, ru, en]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: adults (all residents of Latvia)
+    operator: government
+    operator_name: Nacionālais veselības dienests (NVD)
+    source:
+      name: NVD — Toll-free unified crisis line 116 123
+      url: https://www.vmnvd.gov.lv/en/toll-free-unified-crisis-line-116123
+      type: government
+      last_verified: 2026-05-08
+
+  - id: lv-116-111-bti
+    name: Bērnu un pusaudžu uzticības tālrunis
+    categories: [crisis, youth, child_abuse]
+    contacts:
+      phone: "116 111"
+      website: https://www.bti.gov.lv/lv/uzticibas-talrunis-116111
+    languages: [lv]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: children and adolescents
+    operator: government
+    operator_name: Valsts bērnu tiesību aizsardzības inspekcija
+    source:
+      name: NVD — Toll-free unified crisis line 116 123
+      url: https://www.vmnvd.gov.lv/en/toll-free-unified-crisis-line-116123
+      type: government
+      last_verified: 2026-05-08
+
+  - id: lv-pusaudzu-resursu-centrs
+    name: Pusaudžu Resursu centrs
+    categories: [mental_health, suicide, youth]
+    contacts:
+      phone: "29164747"
+      website: https://www.pusaudzucentrs.lv
+    languages: [lv]
+    hours:
+      type: business_hours
+    cost: free
+    target_population: adolescents 11–18 with mood disorders or suicide risk
+    operator: ngo_government_funded
+    operator_name: Pusaudžu resursu centrs (signposted by NVD)
+    source:
+      name: NVD — Mental health
+      url: https://www.vmnvd.gov.lv/en/mental-health
+      type: government
+      last_verified: 2026-05-08
+
+  - id: lv-skalbes
+    name: Skalbes — Krīžu un konsultāciju centrs
+    categories: [crisis, domestic_violence, sexual_assault]
+    contacts:
+      phone: "116 006"
+      phone_alt: "67 222 922"
+      website: https://www.skalbes.lv
+    languages: [lv, ru]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: violence victims; general crisis
+    operator: ngo_government_funded
+    operator_name: Krīžu un konsultāciju centrs Skalbes (signposted by NVD)
+    source:
+      name: NVD — Mental health
+      url: https://www.vmnvd.gov.lv/en/mental-health
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://www.vmnvd.gov.lv/en/toll-free-unified-crisis-line-116123
+    - https://www.vmnvd.gov.lv/en/mental-health
+  notes: |
+    Added in Wave 2 of country expansion. Cited gov source: Nacionālais veselības dienests
+    (NVD) — Latvia's National Health Service.
+    Maintainer should re-verify each entry against the source page, then flip to verified.

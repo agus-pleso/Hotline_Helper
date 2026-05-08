@@ -1,12 +1,84 @@
 country:
   iso_code: CZ
   iso3: CZE
-  name: 'Czechia'
+  name: Czechia
   region: Europe
-emergency_services: []
-hotlines: []
+  subregion: Eastern Europe
+
+emergency_services:
+  - name: European Emergency Number
+    phone: "112"
+  - name: Police
+    phone: "158"
+  - name: Fire
+    phone: "150"
+  - name: Ambulance
+    phone: "155"
+
+hotlines:
+  - id: cz-116-123-prvni-pomoc
+    name: Linka první psychické pomoci
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "+420 116 123"
+      website: https://www.linkapsychickepomoci.cz
+    languages: [cs]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo
+    operator_name: Cesta z krize z.ú. (signposted by 72h.gov.cz)
+    source:
+      name: 72h.gov.cz — Important contacts (Czech government emergency portal)
+      url: https://www.72h.gov.cz/en/important-contacts
+      type: government
+      last_verified: 2026-05-08
+
+  - id: cz-116-111-linka-bezpeci
+    name: Linka bezpečí
+    categories: [crisis, youth, child_abuse, mental_health]
+    contacts:
+      phone: "+420 116 111"
+      chat_url: https://linkabezpeci.cz
+      website: https://linkabezpeci.cz
+    languages: [cs]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: children and students up to age 26
+    operator: ngo_government_funded
+    operator_name: Linka bezpečí, z.s. (signposted by 72h.gov.cz)
+    source:
+      name: 72h.gov.cz — Important contacts (Czech government emergency portal)
+      url: https://www.72h.gov.cz/en/important-contacts
+      type: government
+      last_verified: 2026-05-08
+
+  - id: cz-senior-zivot-90
+    name: Senior telefon (Život 90)
+    categories: [crisis, mental_health, elder_abuse]
+    contacts:
+      phone: "+420 800 157 157"
+      website: https://www.zivot90.cz
+    languages: [cs]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: seniors
+    operator: ngo
+    operator_name: Život 90 (signposted by 72h.gov.cz)
+    source:
+      name: 72h.gov.cz — Important contacts (Czech government emergency portal)
+      url: https://www.72h.gov.cz/en/important-contacts
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://www.72h.gov.cz/en/important-contacts
+    - https://www.linkyduvery.cz
+  notes: |
+    Added in Wave 2 of country expansion. Cited gov source: 72h.gov.cz (Generální ředitelství HZS ČR — Czech Fire Rescue Service / government emergency portal). The Czech Ministry of Health (mzcr.cz) does not host its own consolidated hotline list; 72h.gov.cz is the official government-published directory.
+    Maintainer should re-verify each entry against the source page, then flip to verified.

@@ -1,12 +1,85 @@
 country:
   iso_code: GR
   iso3: GRC
-  name: 'Greece'
+  name: Greece
   region: Europe
-emergency_services: []
-hotlines: []
+  subregion: Southern Europe
+
+emergency_services:
+  - name: European Emergency Number
+    phone: "112"
+
+hotlines:
+  - id: gr-10306
+    name: Γραμμή Ψυχοκοινωνικής Υποστήριξης 10306
+    aliases:
+      - 10306 Psychosocial Support Line
+    categories: [mental_health, crisis, suicide]
+    contacts:
+      phone: "10306"
+      website: https://10306.gr
+    languages: [el, uk, ru]
+    hours:
+      type: custom
+      details: |
+        Psychological support 24/7; psychosocial care daily 09:00–21:00 (EET/EEST);
+        Ukrainian/Russian Mon–Fri 09:00–21:00.
+    cost: free
+    operator: government
+    operator_name: Υπουργείο Υγείας (Ministry of Health) — National and Kapodistrian University of Athens
+    source:
+      name: Υπουργείο Υγείας — Mental Health Support Lines
+      url: https://www.moh.gov.gr/articles/health/domes-kai-draseis-gia-thn-ygeia/c312-psyxikh-ygeia/thlefwnikes-grammes-yposthrikshs/9759-10306-thlefwnikh-grammh-gia-psyxokoinwnikh-yposthriksh-gia-toy-genikoy-plhthysmoy-kata-th-diarkeia-ths-pandhmias
+      type: government
+      last_verified: 2026-05-08
+
+  - id: gr-1018-klimaka
+    name: Γραμμή Παρέμβασης για την Αυτοκτονία 1018
+    aliases:
+      - Klimaka Suicide Intervention Line
+    categories: [suicide, crisis, mental_health]
+    contacts:
+      phone: "1018"
+      website: https://www.klimaka.org.gr
+    languages: [el]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: people with suicidal ideation, attempt survivors, and the bereaved
+    operator: ngo_government_funded
+    operator_name: Klimaka (under the auspices of the Ministry of Health, Mental Health Division)
+    source:
+      name: Υπουργείο Υγείας — Mental Health Support Lines
+      url: https://www.moh.gov.gr/articles/health/domes-kai-draseis-gia-thn-ygeia/c312-psyxikh-ygeia/thlefwnikes-grammes-yposthrikshs/9759-10306-thlefwnikh-grammh-gia-psyxokoinwnikh-yposthriksh-gia-toy-genikoy-plhthysmoy-kata-th-diarkeia-ths-pandhmias
+      type: government
+      last_verified: 2026-05-08
+
+  - id: gr-1145-kethea
+    name: Γραμμή Ιθάκη — KETHEA 1145
+    categories: [substance_abuse, mental_health, crisis]
+    contacts:
+      phone: "1145"
+      website: https://www.kethea.gr
+    languages: [el]
+    hours:
+      type: unknown
+    cost: free
+    operator: ngo_government_funded
+    operator_name: KETHEA (Therapy Center for Dependent Individuals — under the Ministry of Health)
+    source:
+      name: Υπουργείο Υγείας — Mental Health Support Lines
+      url: https://www.moh.gov.gr/articles/health/domes-kai-draseis-gia-thn-ygeia/c312-psyxikh-ygeia/thlefwnikes-grammes-yposthrikshs/9759-10306-thlefwnikh-grammh-gia-psyxokoinwnikh-yposthriksh-gia-toy-genikoy-plhthysmoy-kata-th-diarkeia-ths-pandhmias
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://www.moh.gov.gr/articles/health/domes-kai-draseis-gia-thn-ygeia/c312-psyxikh-ygeia/thlefwnikes-grammes-yposthrikshs/9759-10306-thlefwnikh-grammh-gia-psyxokoinwnikh-yposthriksh-gia-toy-genikoy-plhthysmoy-kata-th-diarkeia-ths-pandhmias
+    - https://10306.gr
+  notes: |
+    Added in Wave 2 of country expansion. Cited gov source: Υπουργείο Υγείας
+    (Ministry of Health, Greece) — Mental Health support telephone lines page,
+    listing 10306 (primary), 1018 Klimaka, and KETHEA 1145.
+    Maintainer should re-verify each entry against the source page, then flip to verified.
