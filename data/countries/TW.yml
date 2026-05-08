@@ -1,12 +1,90 @@
 country:
   iso_code: TW
   iso3: TWN
-  name: 'Taiwan'
+  name: Taiwan
   region: Asia
-emergency_services: []
-hotlines: []
+  subregion: Eastern Asia
+
+emergency_services:
+  - name: Police
+    phone: "110"
+  - name: Fire / Ambulance
+    phone: "119"
+
+hotlines:
+  - id: tw-1925-anxin
+    name: 安心專線 1925 (Anxin Line — Peace of Mind)
+    aliases:
+      - 依舊愛我
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "1925"
+      website: https://dep.mohw.gov.tw/DOMHAOH/cp-4906-54077-107.html
+    languages: [zh-tw]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo_government_funded
+    operator_name: Ministry of Health and Welfare (commissioned to Taipei Lifeline Association)
+    notes: Original number was 0800-788-995; changed to 1925 in July 2019.
+    source:
+      name: 衛生福利部 心理健康司 (MOHW Mental Health Department) — 1925 Anxin Line
+      url: https://dep.mohw.gov.tw/DOMHAOH/cp-4906-54077-107.html
+      type: government
+      last_verified: 2026-05-08
+
+  - id: tw-1995-lifeline
+    name: 生命線協談專線 1995 (Lifeline Taiwan)
+    aliases:
+      - 要救救我
+    categories: [suicide, crisis, mental_health]
+    contacts:
+      phone: "1995"
+      website: https://www.life1995.org.tw
+    languages: [zh-tw, en]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo
+    operator_name: Taiwan Lifeline International (gov-listed on MOHW national counseling roster)
+    source:
+      name: MOHW — National counseling/rescue hotlines roster
+      url: https://dep.mohw.gov.tw/DOMHAOH/cp-327-8715-107.html
+      type: government
+      last_verified: 2026-05-08
+
+  - id: tw-1980-teacher-chang
+    name: 「張老師」服務專線 1980 (Teacher Chang Service Line)
+    aliases:
+      - 依舊幫您
+    categories: [mental_health, youth, crisis]
+    contacts:
+      phone: "1980"
+      website: https://www.1980.org.tw
+    languages: [zh-tw]
+    hours:
+      type: custom
+      details: Mon–Sat 09:00–21:00, Sun 09:00–17:00 (TST).
+    cost: free
+    target_population: general public, especially youth and young adults
+    operator: ngo_government_funded
+    operator_name: Teacher Chang Foundation (historically gov-commissioned; gov-listed on MOHW roster)
+    source:
+      name: MOHW — National counseling/rescue hotlines roster
+      url: https://dep.mohw.gov.tw/DOMHAOH/cp-327-8715-107.html
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://dep.mohw.gov.tw/DOMHAOH/cp-4906-54077-107.html
+    - https://dep.mohw.gov.tw/DOMHAOH/cp-327-8715-107.html
+    - https://www.mohw.gov.tw/cp-16-19209-1.html
+  notes: |
+    Added in Wave 3 of country expansion. Cited gov source: Ministry of Health and Welfare
+    (衛生福利部, MOHW) — Mental Health Department. 1925 Anxin Line is the canonical
+    gov suicide-prevention line; 1995 and 1980 are NGO-operated but listed on MOHW's
+    national counseling roster.
+    Maintainer should re-verify each entry against the source page, then flip to verified.

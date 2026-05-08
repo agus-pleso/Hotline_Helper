@@ -1,12 +1,48 @@
 country:
   iso_code: TH
   iso3: THA
-  name: 'Thailand'
+  name: Thailand
   region: Asia
-emergency_services: []
-hotlines: []
+  subregion: South-eastern Asia
+
+emergency_services:
+  - name: Police
+    phone: "191"
+  - name: Ambulance
+    phone: "1669"
+
+hotlines:
+  - id: th-1323-mental-health
+    name: สายด่วนสุขภาพจิต 1323 (Mental Health Hotline 1323)
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "1323"
+      chat_url: https://1323alltime.camri.go.th
+      website: https://www.dmh.go.th
+    languages: [th]
+    hours:
+      type: 24/7
+      details: Phone 24/7; online registration callback typically within 24–48 hours.
+    cost: free
+    operator: government
+    operator_name: Department of Mental Health (DMH), Ministry of Public Health
+    notes: |
+      Integrated with the National Health Security Office (NHSO) Universal Coverage Scheme.
+      Thai-language only; English-speakers are typically referred to the NGO Samaritans of
+      Thailand (02-713-6791).
+    source:
+      name: Department of Mental Health — Ministry of Public Health Thailand
+      url: https://www.dmh.go.th
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://www.dmh.go.th
+    - https://www.thailand.go.th/issue-focus-detail/001_07_045
+  notes: |
+    Added in Wave 3 of country expansion. Cited gov source: Department of Mental Health (DMH),
+    Ministry of Public Health (MOPH), Thailand. 1323 is the primary gov mental-health line.
+    Maintainer should re-verify the entry against the source page, then flip to verified.

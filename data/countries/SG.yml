@@ -1,12 +1,68 @@
 country:
   iso_code: SG
   iso3: SGP
-  name: 'Singapore'
+  name: Singapore
   region: Asia
-emergency_services: []
-hotlines: []
+  subregion: South-eastern Asia
+
+emergency_services:
+  - name: Police
+    phone: "999"
+  - name: Ambulance / Fire
+    phone: "995"
+
+hotlines:
+  - id: sg-mindline-1771
+    name: National Mindline 1771
+    categories: [mental_health, crisis, suicide]
+    contacts:
+      phone: "1771"
+      sms: "+65 6669 1771"
+      chat_url: https://www.mindline.sg
+      website: https://www.mindline.sg/1771
+    languages: [en]
+    hours:
+      type: 24/7
+    cost: free
+    operator: government
+    operator_name: Ministry of Health (MOH) Office for Healthcare Transformation (MOHT) / Institute of Mental Health (IMH)
+    notes: |
+      Launched June 2025; replaced the IMH Mental Health Helpline. ~30 trained counsellors.
+    source:
+      name: Ministry of Health Singapore — National Mindline 1771 newsroom
+      url: https://www.moh.gov.sg/newsroom/national-mindline-1771-to-provide--round-the-clock-support-for-mental-health/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: sg-sos-1767
+    name: Samaritans of Singapore (SOS) 24-hour Hotline
+    categories: [suicide, crisis, mental_health]
+    contacts:
+      phone: "1767"
+      sms: "9151 1767"
+      chat_url: https://www.sos.org.sg
+      website: https://www.sos.org.sg
+    languages: [en]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo_government_funded
+    operator_name: Samaritans of Singapore (SOS) — gov-listed NCSS member
+    notes: CareText support is via WhatsApp 9151 1767.
+    source:
+      name: Ministry of Health Singapore — Mental Health Services
+      url: https://www.moh.gov.sg/seeking-healthcare/find-a-facility-or-service/mental-health-services/
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://www.moh.gov.sg/newsroom/national-mindline-1771-to-provide--round-the-clock-support-for-mental-health/
+    - https://www.moh.gov.sg/seeking-healthcare/find-a-facility-or-service/mental-health-services/
+  notes: |
+    Added in Wave 3 of country expansion. Cited gov source: Ministry of Health Singapore.
+    National Mindline 1771 is the gov-operated national line (since June 2025); SOS 1767 is
+    a long-running NGO partner signposted on MOH and SupportGoWhere (life.gov.sg).
+    Maintainer should re-verify each entry against the source pages, then flip to verified.

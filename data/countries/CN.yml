@@ -1,12 +1,75 @@
 country:
   iso_code: CN
   iso3: CHN
-  name: 'China'
+  name: China
   region: Asia
-emergency_services: []
-hotlines: []
+  subregion: Eastern Asia
+
+emergency_services:
+  - name: Police
+    phone: "110"
+  - name: Fire
+    phone: "119"
+  - name: Ambulance
+    phone: "120"
+
+hotlines:
+  - id: cn-12356
+    name: 全国心理援助热线 12356
+    aliases:
+      - National Mental Health Assistance Hotline 12356
+    categories: [mental_health, crisis, suicide]
+    contacts:
+      phone: "12356"
+      website: https://en.nhc.gov.cn/2025-02/14/c_86392.htm
+    languages: [zh-cn]
+    hours:
+      type: custom
+      details: >
+        Minimum 18 hours/day per city; many regions provide 24/7. Coverage varies
+        by provincial implementation.
+    cost: free
+    operator: government
+    operator_name: National Health Commission of the People's Republic of China (NHC)
+    notes: |
+      Launched January 2025 by NHC; rolled out nationwide May 1, 2025. Integrated
+      with police (110), fire (119), and ambulance (120) emergency lines.
+    source:
+      name: The State Council of the PRC — Mental health support line launched
+      url: https://english.www.gov.cn/news/202412/26/content_WS676c9202c6d0868f4e8ee46c.html
+      type: government
+      last_verified: 2026-05-08
+
+  - id: cn-beijing-suicide-prevention
+    name: 北京心理危机研究与干预中心 (Beijing Suicide Research and Prevention Center)
+    categories: [suicide, crisis, mental_health]
+    contacts:
+      phone: "010-82951332"
+      phone_alt: "800-810-1117"
+    languages: [zh-cn]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo_government_funded
+    operator_name: Beijing Suicide Research and Prevention Center, hosted at Beijing Huilongguan Hospital (public psychiatric hospital, WHO Collaborating Centre)
+    notes: |
+      Long-running, widely cited line predating the 2025 NHC 12356 rollout.
+      Treat as supplementary; the NHC's 12356 is now the canonical national line.
+    source:
+      name: NHC — China launches hotlines, awareness campaigns to bolster mental health services
+      url: https://en.nhc.gov.cn/2025-02/14/c_86392.htm
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://english.www.gov.cn/news/202412/26/content_WS676c9202c6d0868f4e8ee46c.html
+    - https://en.nhc.gov.cn/2025-02/14/c_86392.htm
+  notes: |
+    Added in Wave 3 of country expansion. Cited gov source: National Health Commission of
+    the PRC and the State Council. NHC has not yet published a single canonical roster page
+    listing 12356 with full hours/languages/operator metadata; coverage and hours vary by
+    provincial implementation. Maintainer should re-verify against the source pages and
+    update hours when NHC publishes a more detailed national page, then flip to verified.

@@ -1,12 +1,66 @@
 country:
   iso_code: MY
   iso3: MYS
-  name: 'Malaysia'
+  name: Malaysia
   region: Asia
-emergency_services: []
-hotlines: []
+  subregion: South-eastern Asia
+
+emergency_services:
+  - name: Emergency Services
+    phone: "999"
+  - name: Emergency Services (mobile)
+    phone: "112"
+
+hotlines:
+  - id: my-talian-heal-15555
+    name: Talian HEAL 15555
+    aliases:
+      - Help with Empathy And Love
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "15555"
+      website: https://sites.google.com/moh.gov.my/ncemh/talian-sokongan-psikososial
+    languages: [ms, en]
+    hours:
+      type: custom
+      details: Daily 08:00–24:00 (MYT), incl. public holidays.
+    cost: free
+    target_population: general public, NGOs, non-citizens, caregivers/family of persons with mental-health conditions
+    operator: government
+    operator_name: Kementerian Kesihatan Malaysia (KKM) — Pegawai Psikologi (Kaunseling), Bahagian Psikologi Kaunseling
+    source:
+      name: Ministry of Health Malaysia — National Centre of Excellence for Mental Health (NCEMH) Talian Sokongan Psikososial
+      url: https://sites.google.com/moh.gov.my/ncemh/talian-sokongan-psikososial
+      type: government
+      last_verified: 2026-05-08
+
+  - id: my-talian-kasih-15999
+    name: Talian Kasih 15999
+    categories: [domestic_violence, sexual_assault, child_abuse, crisis]
+    contacts:
+      phone: "15999"
+      sms: "019-261 5999"
+      website: https://www.malaysia.gov.my/en/categories/law--safety/vulnerable-groups/talian-kasih-15999
+    languages: [ms, en]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: women, children, elderly, persons with disabilities (OKU), and other vulnerable groups
+    operator: government
+    operator_name: Jabatan Kebajikan Masyarakat (JKM) — Kementerian Pembangunan Wanita, Keluarga dan Masyarakat (KPWKM)
+    source:
+      name: malaysia.gov.my — Talian Kasih 15999 (official MyGovernment portal)
+      url: https://www.malaysia.gov.my/en/categories/law--safety/vulnerable-groups/talian-kasih-15999
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://sites.google.com/moh.gov.my/ncemh/talian-sokongan-psikososial
+    - https://www.malaysia.gov.my/en/categories/law--safety/vulnerable-groups/talian-kasih-15999
+  notes: |
+    Added in Wave 3 of country expansion. Cited gov sources: Ministry of Health (KKM) NCEMH
+    page (gov-hosted on sites.google.com/moh.gov.my) and the official MyGovernment portal.
+    Maintainer should re-verify each entry against the source pages, then flip to verified.

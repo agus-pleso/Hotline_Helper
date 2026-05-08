@@ -1,12 +1,58 @@
 country:
   iso_code: VN
   iso3: VNM
-  name: 'Viet Nam'
+  name: Viet Nam
   region: Asia
-emergency_services: []
-hotlines: []
+  subregion: South-eastern Asia
+
+emergency_services:
+  - name: Police
+    phone: "113"
+  - name: Fire
+    phone: "114"
+  - name: Ambulance
+    phone: "115"
+
+hotlines:
+  - id: vn-tongdai-111
+    name: Tổng đài Quốc gia Bảo vệ Trẻ em 111
+    aliases:
+      - National Child Protection Hotline 111
+    categories: [child_abuse, crisis, sexual_assault, youth, mental_health]
+    contacts:
+      phone: "111"
+      chat_url: http://tongdai111.vn
+      email: tongdaiquocgia111@gmail.com
+      website: http://tongdai111.vn
+    languages: [vi, en]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: children under 16 and adults reporting child welfare concerns; covers psychological distress, suicidal ideation, anxiety, and depression in youth
+    operator: government
+    operator_name: Cục Trẻ em (Department of Child Affairs), MOLISA
+    notes: |
+      Three operating centres in Hanoi, Da Nang, and An Giang. Web chat available
+      via the official site. The closest gov-operated crisis line in Vietnam, though
+      its mandate is centred on child protection.
+    source:
+      name: Tổng đài 111 — Department of Child Affairs, MOLISA
+      url: http://tongdai111.vn
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - http://tongdai111.vn
+  notes: |
+    Added in Wave 3 of country expansion. Vietnam does NOT have a dedicated
+    government-operated adult mental-health / suicide hotline. The Ministry of Health
+    (moh.gov.vn) does not publish or operate one; adult callers in mental-health crisis
+    are typically directed to hospital psychiatric departments. The MOLISA-run national
+    child-protection line 111 is the only gov-operated crisis line and explicitly covers
+    youth mental health, suicidal ideation, and depression alongside child protection.
+    NGO "Ngày mai" exists but is not government-operated and is therefore omitted.
+    Maintainer should consider this gap and decide whether to mark verification_status
+    accordingly when reviewing.

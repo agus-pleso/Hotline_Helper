@@ -1,12 +1,192 @@
 country:
   iso_code: HK
   iso3: HKG
-  name: 'Hong Kong'
+  name: Hong Kong
   region: Asia
-emergency_services: []
-hotlines: []
+  subregion: Eastern Asia
+
+emergency_services:
+  - name: Emergency Services
+    phone: "999"
+    notes: Police, fire, ambulance.
+
+hotlines:
+  - id: hk-18111-mental-health
+    name: 精神健康支援熱線 18111 (Mental Health Support Hotline)
+    categories: [mental_health, crisis, suicide]
+    contacts:
+      phone: "18111"
+      website: https://www.shallwetalk.hk/en/get-help/mental-health-support-hotline-18111/
+    languages: [zh-hk, en]
+    hours:
+      type: 24/7
+    cost: free
+    operator: government
+    operator_name: Hospital Authority / Health Bureau, HKSAR
+    source:
+      name: Centre for Health Protection, Department of Health HKSAR — Seek Help
+      url: https://www.chp.gov.hk/en/features/48085.html
+      type: government
+      last_verified: 2026-05-08
+
+  - id: hk-ha-mental-health-direct
+    name: 醫院管理局精神健康專線 (Hospital Authority Mental Health Direct)
+    categories: [mental_health, crisis]
+    contacts:
+      phone: "2466 7350"
+      website: https://www.ha.org.hk
+    languages: [zh-hk, en]
+    hours:
+      type: 24/7
+    cost: free
+    operator: government
+    operator_name: Hospital Authority (HA), HKSAR
+    source:
+      name: Centre for Health Protection, Department of Health HKSAR — Seek Help
+      url: https://www.chp.gov.hk/en/features/48085.html
+      type: government
+      last_verified: 2026-05-08
+
+  - id: hk-swd-hotline
+    name: 社會福利署熱線 (Social Welfare Department Hotline)
+    categories: [crisis, mental_health, domestic_violence]
+    contacts:
+      phone: "2343 2255"
+      website: https://www.swd.gov.hk
+    languages: [zh-hk, en]
+    hours:
+      type: 24/7
+    cost: free
+    operator: government
+    operator_name: Social Welfare Department, HKSAR
+    source:
+      name: Centre for Health Protection, Department of Health HKSAR — Seek Help
+      url: https://www.chp.gov.hk/en/features/48085.html
+      type: government
+      last_verified: 2026-05-08
+
+  - id: hk-suicide-prevention-services
+    name: 生命熱線 (Suicide Prevention Services)
+    categories: [suicide, crisis]
+    contacts:
+      phone: "2382 0000"
+      website: https://www.sps.org.hk
+    languages: [zh-hk]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo
+    operator_name: Suicide Prevention Services (gov-listed NGO)
+    notes: Also operates dedicated youth and elderly lines.
+    source:
+      name: Centre for Health Protection, Department of Health HKSAR — Seek Help
+      url: https://www.chp.gov.hk/en/features/48085.html
+      type: government
+      last_verified: 2026-05-08
+
+  - id: hk-samaritan-befrienders
+    name: 香港撒瑪利亞防止自殺會 (The Samaritan Befrienders Hong Kong)
+    categories: [suicide, crisis]
+    contacts:
+      phone: "2389 2222"
+      chat_url: https://chatpoint.org.hk
+      website: https://www.sbhk.org.hk
+    languages: [zh-hk]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo
+    operator_name: The Samaritan Befrienders Hong Kong (gov-listed NGO)
+    source:
+      name: Centre for Health Protection, Department of Health HKSAR — Seek Help
+      url: https://www.chp.gov.hk/en/features/48085.html
+      type: government
+      last_verified: 2026-05-08
+
+  - id: hk-samaritans-multilingual
+    name: The Samaritans Hong Kong (multilingual)
+    categories: [suicide, crisis]
+    contacts:
+      phone: "2896 0000"
+      website: https://samaritans.org.hk
+    languages: [en, zh-hk]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: general public, especially non-Chinese speakers
+    operator: ngo
+    operator_name: The Samaritans Hong Kong (gov-listed NGO)
+    source:
+      name: Centre for Health Protection, Department of Health HKSAR — Seek Help
+      url: https://www.chp.gov.hk/en/features/48085.html
+      type: government
+      last_verified: 2026-05-08
+
+  - id: hk-caritas-family-crisis
+    name: 明愛向晴軒 (Caritas Family Crisis Support Centre)
+    categories: [crisis, domestic_violence]
+    contacts:
+      phone: "18288"
+      website: https://fcsc.caritas.org.hk
+    languages: [zh-hk]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: individuals and families in crisis
+    operator: ngo
+    operator_name: Caritas Hong Kong (gov-listed)
+    source:
+      name: Shall We Talk — Emergency Helplines (Health Bureau initiative)
+      url: https://www.shallwetalk.hk/en/get-help/emergency-helplines/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: hk-cease-tung-wah
+    name: CEASE Crisis Centre (Tung Wah Group of Hospitals)
+    categories: [sexual_assault, domestic_violence, crisis]
+    contacts:
+      phone: "18281"
+      website: https://www.tungwahcsd.org
+    languages: [zh-hk]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: victims of sexual and domestic violence
+    operator: ngo_government_funded
+    operator_name: Tung Wah Group of Hospitals (SWD-funded)
+    source:
+      name: Shall We Talk — Emergency Helplines (Health Bureau initiative)
+      url: https://www.shallwetalk.hk/en/get-help/emergency-helplines/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: hk-carer-support-182183
+    name: 照顧者支援專線 (Designated Hotline for Carer Support)
+    categories: [crisis, elder_abuse]
+    contacts:
+      phone: "182 183"
+      website: https://www.swd.gov.hk
+    languages: [zh-hk]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: carers of elderly and persons with disabilities
+    operator: government
+    operator_name: Social Welfare Department, HKSAR
+    source:
+      name: Shall We Talk — Emergency Helplines (Health Bureau initiative)
+      url: https://www.shallwetalk.hk/en/get-help/emergency-helplines/
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://www.chp.gov.hk/en/features/48085.html
+    - https://www.shallwetalk.hk/en/get-help/emergency-helplines/
+  notes: |
+    Added in Wave 3 of country expansion. Cited gov sources: Centre for Health Protection (CHP),
+    Department of Health HKSAR — "Seek Help" page; and Shall We Talk (Advisory Committee on
+    Mental Health initiative under the Health Bureau).
+    Maintainer should re-verify each entry against the source pages, then flip to verified.
