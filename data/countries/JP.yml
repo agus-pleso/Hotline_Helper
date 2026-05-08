@@ -1,0 +1,78 @@
+country:
+  iso_code: JP
+  iso3: JPN
+  name: Japan
+  region: Asia
+  subregion: Eastern Asia
+
+emergency_services:
+  - name: Police
+    phone: "110"
+  - name: Fire / Ambulance
+    phone: "119"
+
+hotlines:
+  - id: jp-yorisoi-hotline
+    name: よりそいホットライン (Yorisoi Hotline)
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "0120-279-338"
+      website: https://www.since2011.net/yorisoi/
+    languages: [ja]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo_government_funded
+    operator_name: 一般社団法人 社会的包摂サポートセンター (funded by MHLW)
+    source:
+      name: 厚生労働省 — Ministry of Health, Labour and Welfare
+      url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/seikatsuhogo/jisatsu/index.html
+      type: government
+      last_verified: 2026-05-08
+
+  - id: jp-inochi-no-denwa
+    name: いのちの電話 (Inochi no Denwa)
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "0120-783-556"
+      website: https://www.inochinodenwa.org
+    languages: [ja]
+    hours:
+      type: custom
+      details: Daily 16:00–21:00 (JST); 10th of each month 8:00 to 11th 8:00 (free line)
+    cost: free
+    operator: ngo
+    operator_name: Federation of Inochi no Denwa (signposted by MHLW)
+    source:
+      name: 厚生労働省 — Mental health and suicide prevention
+      url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/seikatsuhogo/jisatsu/index.html
+      type: government
+      last_verified: 2026-05-08
+
+  - id: jp-tell
+    name: TELL Lifeline
+    categories: [mental_health, crisis]
+    contacts:
+      phone: "03-5774-0992"
+      chat_url: https://telljp.com/lifeline/
+      website: https://telljp.com
+    languages: [en]
+    hours:
+      type: custom
+      details: Daily 09:00–23:00 (JST)
+    cost: free
+    target_population: English-speaking community in Japan
+    operator: ngo
+    operator_name: TELL Japan
+    source:
+      name: 厚生労働省 — Mental health and suicide prevention (foreign-language services list)
+      url: https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/seikatsuhogo/jisatsu/index.html
+      type: government
+      last_verified: 2026-05-08
+
+metadata:
+  last_updated: 2026-05-08
+  last_scraped: 2026-05-08
+  verification_status: verified
+  data_sources:
+    - https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/hukushi_kaigo/seikatsuhogo/jisatsu/index.html

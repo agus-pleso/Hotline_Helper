@@ -1,0 +1,83 @@
+country:
+  iso_code: DE
+  iso3: DEU
+  name: Germany
+  region: Europe
+  subregion: Western Europe
+
+emergency_services:
+  - name: European Emergency Number
+    phone: "112"
+  - name: Police
+    phone: "110"
+
+hotlines:
+  - id: de-telefonseelsorge
+    name: TelefonSeelsorge
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "0800 111 0 111"
+      phone_alt: "0800 111 0 222"
+      chat_url: https://chat.telefonseelsorge.de
+      website: https://www.telefonseelsorge.de
+    languages: [de]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo
+    operator_name: TelefonSeelsorge (signposted by Bundesgesundheitsministerium)
+    notes: |
+      Anonyme, kostenlose und verschwiegene Beratung rund um die Uhr. Der
+      Anruf erscheint nicht auf der Telefonrechnung.
+    source:
+      name: Bundesministerium für Gesundheit — Hilfe in Krisen
+      url: https://www.bundesgesundheitsministerium.de/themen/praevention/suizidpraevention.html
+      type: government
+      last_verified: 2026-05-08
+
+  - id: de-116-117
+    name: 116 117 — Ärztlicher Bereitschaftsdienst
+    categories: [mental_health, crisis]
+    contacts:
+      phone: "116 117"
+      website: https://www.116117.de
+    languages: [de]
+    hours:
+      type: 24/7
+    cost: free
+    operator: government
+    operator_name: Kassenärztliche Bundesvereinigung
+    notes: Allgemeiner Bereitschaftsdienst, mit Vermittlung an psychiatrische Notdienste.
+    source:
+      name: 116117.de — Kassenärztliche Bundesvereinigung
+      url: https://www.116117.de
+      type: government
+      last_verified: 2026-05-08
+
+  - id: de-nummer-gegen-kummer
+    name: Nummer gegen Kummer — Kinder- und Jugendtelefon
+    categories: [youth, child_abuse, crisis]
+    contacts:
+      phone: "116 111"
+      website: https://www.nummergegenkummer.de
+    languages: [de]
+    hours:
+      type: custom
+      details: Mon–Sat 14:00–20:00 (CET/CEST)
+    cost: free
+    target_population: children and young people
+    operator: ngo_government_funded
+    operator_name: Nummer gegen Kummer e. V. (gefördert vom BMFSFJ)
+    source:
+      name: Bundesministerium für Familie, Senioren, Frauen und Jugend
+      url: https://www.bmfsfj.de
+      type: government
+      last_verified: 2026-05-08
+
+metadata:
+  last_updated: 2026-05-08
+  last_scraped: 2026-05-08
+  verification_status: verified
+  data_sources:
+    - https://www.bundesgesundheitsministerium.de/themen/praevention/suizidpraevention.html
+    - https://www.116117.de

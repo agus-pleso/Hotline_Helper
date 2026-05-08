@@ -1,0 +1,78 @@
+country:
+  iso_code: KR
+  iso3: KOR
+  name: Korea, Republic of
+  region: Asia
+  subregion: Eastern Asia
+
+emergency_services:
+  - name: Police
+    phone: "112"
+  - name: Fire / Ambulance
+    phone: "119"
+
+hotlines:
+  - id: kr-1393
+    name: 자살예방상담전화 1393
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "1393"
+      website: https://www.korea.kr/special/policyCurationView.do?newsId=148889027
+    languages: [ko]
+    hours:
+      type: 24/7
+    cost: free
+    operator: government
+    operator_name: 보건복지부 (Ministry of Health and Welfare)
+    source:
+      name: 보건복지부 — Ministry of Health and Welfare
+      url: https://www.mohw.go.kr/menu.es?mid=a10712010100
+      type: government
+      last_verified: 2026-05-08
+
+  - id: kr-1577-0199
+    name: 정신건강위기상담전화 1577-0199
+    categories: [mental_health, crisis]
+    contacts:
+      phone: "1577-0199"
+      website: https://www.ncmh.go.kr
+    languages: [ko]
+    hours:
+      type: 24/7
+    cost: free
+    operator: government
+    operator_name: 국립정신건강센터 (National Center for Mental Health)
+    source:
+      name: 국립정신건강센터 (NCMH)
+      url: https://www.ncmh.go.kr
+      type: government
+      last_verified: 2026-05-08
+
+  - id: kr-1388
+    name: 청소년상담전화 1388
+    categories: [youth, crisis, mental_health]
+    contacts:
+      phone: "1388"
+      sms: "1388"
+      chat_url: https://www.1388.go.kr
+      website: https://www.1388.go.kr
+    languages: [ko]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: 청소년 (youth)
+    operator: government
+    operator_name: 여성가족부 (Ministry of Gender Equality and Family)
+    source:
+      name: 여성가족부 — Ministry of Gender Equality and Family
+      url: https://www.mogef.go.kr
+      type: government
+      last_verified: 2026-05-08
+
+metadata:
+  last_updated: 2026-05-08
+  last_scraped: 2026-05-08
+  verification_status: verified
+  data_sources:
+    - https://www.mohw.go.kr/menu.es?mid=a10712010100
+    - https://www.ncmh.go.kr

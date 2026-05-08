@@ -1,0 +1,61 @@
+country:
+  iso_code: NL
+  iso3: NLD
+  name: Netherlands
+  region: Europe
+  subregion: Western Europe
+
+emergency_services:
+  - name: European Emergency Number
+    phone: "112"
+
+hotlines:
+  - id: nl-113
+    name: 113 Zelfmoordpreventie
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "113"
+      phone_alt: "0800-0113"
+      chat_url: https://www.113.nl/ik-denk-aan-zelfmoord/online-en-anoniem-met-iemand-praten
+      website: https://www.113.nl
+    languages: [nl]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo_government_funded
+    operator_name: 113 Zelfmoordpreventie (gefinancierd door Ministerie van VWS)
+    notes: |
+      Het 0800-nummer is gratis vanaf elke Nederlandse aansluiting; het korte
+      nummer 113 wordt op de mobiele rekening niet apart vermeld.
+    source:
+      name: Rijksoverheid — Suïcidepreventie
+      url: https://www.rijksoverheid.nl/onderwerpen/suicidepreventie
+      type: government
+      last_verified: 2026-05-08
+
+  - id: nl-veilig-thuis
+    name: Veilig Thuis
+    categories: [domestic_violence, child_abuse, elder_abuse]
+    contacts:
+      phone: "0800-2000"
+      chat_url: https://veiligthuis.nl/chat-met-veilig-thuis/
+      website: https://veiligthuis.nl
+    languages: [nl]
+    hours:
+      type: 24/7
+    cost: free
+    operator: government
+    operator_name: Vereniging van Nederlandse Gemeenten — Veilig Thuis
+    source:
+      name: Veilig Thuis (Rijksoverheid)
+      url: https://veiligthuis.nl
+      type: government
+      last_verified: 2026-05-08
+
+metadata:
+  last_updated: 2026-05-08
+  last_scraped: 2026-05-08
+  verification_status: verified
+  data_sources:
+    - https://www.rijksoverheid.nl/onderwerpen/suicidepreventie
+    - https://www.113.nl

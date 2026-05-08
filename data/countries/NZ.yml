@@ -1,0 +1,77 @@
+country:
+  iso_code: NZ
+  iso3: NZL
+  name: New Zealand
+  region: Oceania
+  subregion: Australia and New Zealand
+
+emergency_services:
+  - name: Emergency Services
+    phone: "111"
+
+hotlines:
+  - id: nz-1737
+    name: 1737 — Need to Talk?
+    categories: [mental_health, crisis, suicide]
+    contacts:
+      phone: "1737"
+      sms: "1737"
+      website: https://1737.org.nz
+    languages: [en]
+    hours:
+      type: 24/7
+    cost: free
+    operator: government
+    operator_name: Te Whatu Ora — Health New Zealand
+    notes: Free to call or text. Counsellors are trained to support people in distress.
+    source:
+      name: Te Whatu Ora — Mental health services
+      url: https://www.tewhatuora.govt.nz/health-services-and-programmes/mental-health
+      type: government
+      last_verified: 2026-05-08
+
+  - id: nz-lifeline-aotearoa
+    name: Lifeline Aotearoa
+    categories: [suicide, crisis, mental_health]
+    contacts:
+      phone: "0800 543 354"
+      sms: "4357"
+      website: https://www.lifeline.org.nz
+    languages: [en]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo
+    source:
+      name: Te Whatu Ora — Where to get help in a crisis
+      url: https://info.health.nz/keeping-healthy/mental-health-and-wellbeing/where-to-get-help-in-a-mental-health-crisis/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: nz-youthline
+    name: Youthline
+    categories: [youth, crisis, mental_health]
+    contacts:
+      phone: "0800 376 633"
+      sms: "234"
+      email: talk@youthline.co.nz
+      website: https://www.youthline.co.nz
+    languages: [en]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: young people up to age 24
+    operator: ngo
+    source:
+      name: Te Whatu Ora — Where to get help in a crisis
+      url: https://info.health.nz/keeping-healthy/mental-health-and-wellbeing/where-to-get-help-in-a-mental-health-crisis/
+      type: government
+      last_verified: 2026-05-08
+
+metadata:
+  last_updated: 2026-05-08
+  last_scraped: 2026-05-08
+  verification_status: verified
+  data_sources:
+    - https://www.tewhatuora.govt.nz/health-services-and-programmes/mental-health
+    - https://1737.org.nz

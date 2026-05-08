@@ -1,0 +1,33 @@
+name: New country scraper
+description: Propose a scraper for a country that doesn't have one yet.
+title: "[scraper] "
+labels: ["new-scraper", "good-first-issue"]
+body:
+  - type: input
+    id: country
+    attributes:
+      label: Country (ISO 3166-1 alpha-2)
+      placeholder: "e.g. PT"
+    validations:
+      required: true
+
+  - type: input
+    id: gov_source
+    attributes:
+      label: Government source page
+      description: A page on a .gov / ministry of health / equivalent domain that lists crisis hotlines.
+      placeholder: "https://"
+    validations:
+      required: true
+
+  - type: textarea
+    id: hotlines
+    attributes:
+      label: Hotlines listed on that page
+      description: Bullet list — name, phone, category, languages, hours.
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Anything tricky? Multilingual page? Hidden behind JS? PDF only?

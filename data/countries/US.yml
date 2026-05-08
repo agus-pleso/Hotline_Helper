@@ -1,0 +1,92 @@
+country:
+  iso_code: US
+  iso3: USA
+  name: United States
+  region: Americas
+  subregion: Northern America
+
+emergency_services:
+  - name: Emergency Services
+    phone: "911"
+    notes: Police, fire, and medical emergencies.
+
+hotlines:
+  - id: us-988
+    name: 988 Suicide and Crisis Lifeline
+    aliases:
+      - 988 Lifeline
+      - National Suicide Prevention Lifeline
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "988"
+      sms: "988"
+      chat_url: https://988lifeline.org/chat/
+      website: https://988lifeline.org
+    languages: [en, es]
+    hours:
+      type: 24/7
+    cost: free
+    fees_note: Free; standard SMS/data rates may apply.
+    target_population: general
+    operator: government
+    operator_name: Substance Abuse and Mental Health Services Administration (SAMHSA)
+    notes: |
+      Press 1 to reach the Veterans Crisis Line. Spanish-language service available
+      throughout. Translation services for 240+ other languages.
+    source:
+      name: SAMHSA
+      url: https://www.samhsa.gov/find-help/988
+      type: government
+      last_verified: 2026-05-08
+
+  - id: us-veterans-crisis-line
+    name: Veterans Crisis Line
+    categories: [suicide, mental_health, veterans]
+    contacts:
+      phone: "988"
+      phone_alt: 1-800-273-8255
+      sms: "838255"
+      chat_url: https://www.veteranscrisisline.net/get-help-now/chat/
+      website: https://www.veteranscrisisline.net
+    languages: [en]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: veterans, service members, and their families
+    operator: government
+    operator_name: US Department of Veterans Affairs
+    notes: Reachable by dialing 988 then pressing 1.
+    source:
+      name: US Department of Veterans Affairs
+      url: https://www.veteranscrisisline.net
+      type: government
+      last_verified: 2026-05-08
+
+  - id: us-disaster-distress
+    name: Disaster Distress Helpline
+    categories: [crisis, mental_health]
+    contacts:
+      phone: 1-800-985-5990
+      sms: "66746"
+      website: https://www.samhsa.gov/find-help/disaster-distress-helpline
+    languages: [en, es]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: people experiencing emotional distress related to natural or human-caused disasters
+    operator: government
+    operator_name: SAMHSA
+    source:
+      name: SAMHSA
+      url: https://www.samhsa.gov/find-help/disaster-distress-helpline
+      type: government
+      last_verified: 2026-05-08
+
+metadata:
+  last_updated: 2026-05-08
+  last_scraped: 2026-05-08
+  verification_status: verified
+  data_sources:
+    - https://www.samhsa.gov/find-help/988
+    - https://www.veteranscrisisline.net
+    - https://www.samhsa.gov/find-help/disaster-distress-helpline

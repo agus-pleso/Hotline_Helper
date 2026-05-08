@@ -1,0 +1,81 @@
+country:
+  iso_code: ES
+  iso3: ESP
+  name: Spain
+  region: Europe
+  subregion: Southern Europe
+
+emergency_services:
+  - name: European Emergency Number
+    phone: "112"
+
+hotlines:
+  - id: es-024
+    name: 024 — Línea de atención a la conducta suicida
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "024"
+      website: https://www.sanidad.gob.es/linea024/home.htm
+    languages: [es, ca, gl, eu]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: general
+    operator: government
+    operator_name: Ministerio de Sanidad
+    notes: |
+      Servicio gratuito y confidencial. Disponible en castellano, catalán,
+      gallego y euskera. Línea oficial creada por el Ministerio de Sanidad en 2022.
+    source:
+      name: Ministerio de Sanidad — Línea 024
+      url: https://www.sanidad.gob.es/linea024/home.htm
+      type: government
+      last_verified: 2026-05-08
+
+  - id: es-016
+    name: 016 — Atención a víctimas de violencia de género
+    categories: [domestic_violence, sexual_assault]
+    contacts:
+      phone: "016"
+      sms: "600 000 016"
+      email: 016-online@igualdad.gob.es
+      website: https://violenciagenero.igualdad.gob.es
+    languages: [es, en, fr, de]
+    hours:
+      type: 24/7
+    cost: free
+    operator: government
+    operator_name: Ministerio de Igualdad
+    notes: Atención en 53 idiomas, incluidas lenguas cooficiales de España.
+    source:
+      name: Ministerio de Igualdad — 016
+      url: https://violenciagenero.igualdad.gob.es
+      type: government
+      last_verified: 2026-05-08
+
+  - id: es-anar
+    name: Teléfono ANAR
+    categories: [youth, child_abuse, crisis]
+    contacts:
+      phone: "900 20 20 10"
+      website: https://www.anar.org
+    languages: [es]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: niños, adolescentes y familias
+    operator: ngo
+    operator_name: Fundación ANAR (signposted by Ministerio de Sanidad)
+    source:
+      name: Ministerio de Sanidad — Línea 024 recursos
+      url: https://www.sanidad.gob.es/linea024/home.htm
+      type: government
+      last_verified: 2026-05-08
+
+metadata:
+  last_updated: 2026-05-08
+  last_scraped: 2026-05-08
+  verification_status: verified
+  data_sources:
+    - https://www.sanidad.gob.es/linea024/home.htm
+    - https://violenciagenero.igualdad.gob.es

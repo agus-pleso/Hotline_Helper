@@ -1,0 +1,80 @@
+country:
+  iso_code: FR
+  iso3: FRA
+  name: France
+  region: Europe
+  subregion: Western Europe
+
+emergency_services:
+  - name: European Emergency Number
+    phone: "112"
+  - name: SAMU (medical emergency)
+    phone: "15"
+
+hotlines:
+  - id: fr-3114
+    name: 3114 — Numéro national de prévention du suicide
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "3114"
+      website: https://3114.fr
+    languages: [fr]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: general
+    operator: government
+    operator_name: Ministère du Travail, de la Santé et des Solidarités
+    notes: Free, confidential, 24/7. Staffed by trained mental-health professionals.
+    source:
+      name: Ministère du Travail, de la Santé et des Solidarités
+      url: https://3114.fr
+      type: government
+      last_verified: 2026-05-08
+
+  - id: fr-119
+    name: 119 — Allô Enfance en Danger
+    categories: [child_abuse, youth, crisis]
+    contacts:
+      phone: "119"
+      website: https://www.allo119.gouv.fr
+    languages: [fr]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: children, families, and witnesses of child abuse
+    operator: government
+    operator_name: Service national d'accueil téléphonique de l'enfance en danger (SNATED)
+    source:
+      name: Allô 119 — Service public
+      url: https://www.allo119.gouv.fr
+      type: government
+      last_verified: 2026-05-08
+
+  - id: fr-3919
+    name: 3919 — Violences Femmes Info
+    categories: [domestic_violence, sexual_assault, crisis]
+    contacts:
+      phone: "3919"
+      website: https://arretonslesviolences.gouv.fr
+    languages: [fr]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: women experiencing violence
+    operator: government
+    operator_name: Service public — Arrêtons les violences
+    source:
+      name: arretonslesviolences.gouv.fr
+      url: https://arretonslesviolences.gouv.fr
+      type: government
+      last_verified: 2026-05-08
+
+metadata:
+  last_updated: 2026-05-08
+  last_scraped: 2026-05-08
+  verification_status: verified
+  data_sources:
+    - https://3114.fr
+    - https://www.allo119.gouv.fr
+    - https://arretonslesviolences.gouv.fr

@@ -1,0 +1,67 @@
+name: Data correction
+description: Report incorrect, outdated, or missing hotline data.
+title: "[data] "
+labels: ["data-correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping keep this dataset accurate. **If someone is in immediate
+        danger, please direct them to local emergency services first** (e.g. 911 in the
+        US, 112 in the EU). Then come back and file this.
+
+  - type: input
+    id: country
+    attributes:
+      label: Country (ISO 3166-1 alpha-2)
+      placeholder: "e.g. US, GB, DE"
+    validations:
+      required: true
+
+  - type: input
+    id: hotline_id
+    attributes:
+      label: Hotline `id`
+      description: The `id` field in the YAML, if applicable. Leave blank if reporting a missing one.
+      placeholder: "e.g. us-988"
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind of issue
+      options:
+        - Wrong phone number / SMS / URL
+        - Hotline no longer exists
+        - Hotline exists but is missing from the dataset
+        - Wrong languages / hours / category
+        - Source URL broken
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: What's wrong, and what should it be?
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: Government source URL backing your claim
+      description: Required for changes to be merged. NGO sources alone aren't sufficient.
+      placeholder: "https://"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Confirmations
+      options:
+        - label: The source URL above is from a government health authority (or government-published list).
+          required: true
+        - label: I have read the project [DISCLAIMER](../DISCLAIMER.md) and understand this is a best-effort dataset.
+          required: true

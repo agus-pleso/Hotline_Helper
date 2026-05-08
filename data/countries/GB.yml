@@ -1,0 +1,101 @@
+country:
+  iso_code: GB
+  iso3: GBR
+  name: United Kingdom
+  region: Europe
+  subregion: Northern Europe
+
+emergency_services:
+  - name: Emergency Services
+    phone: "999"
+  - name: Non-emergency / NHS medical advice
+    phone: "111"
+    notes: Includes mental-health crisis option.
+
+hotlines:
+  - id: gb-samaritans
+    name: Samaritans
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "116 123"
+      email: jo@samaritans.org
+      website: https://www.samaritans.org
+    languages: [en]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo
+    operator_name: Samaritans (charity; signposted by NHS England)
+    notes: NHS-listed crisis line. Free to call from any UK phone.
+    source:
+      name: NHS England — Where to get urgent help for mental health
+      url: https://www.nhs.uk/mental-health/advice-for-life-situations-and-events/where-to-get-urgent-help-for-mental-health/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: gb-shout
+    name: Shout
+    categories: [mental_health, crisis]
+    contacts:
+      sms: "85258"
+      website: https://giveusashout.org
+    languages: [en]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo
+    operator_name: Mental Health Innovations (charity; signposted by NHS England)
+    notes: Text "SHOUT" to 85258 from any UK mobile.
+    source:
+      name: NHS England — Where to get urgent help for mental health
+      url: https://www.nhs.uk/mental-health/advice-for-life-situations-and-events/where-to-get-urgent-help-for-mental-health/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: gb-childline
+    name: Childline
+    categories: [youth, child_abuse, crisis]
+    contacts:
+      phone: "0800 1111"
+      chat_url: https://www.childline.org.uk/get-support/1-2-1-counsellor-chat/
+      website: https://www.childline.org.uk
+    languages: [en]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: children and young people up to age 19
+    operator: ngo
+    operator_name: NSPCC (charity; signposted by NHS)
+    source:
+      name: NHS — Helplines for mental health
+      url: https://www.nhs.uk/mental-health/advice-for-life-situations-and-events/where-to-get-urgent-help-for-mental-health/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: gb-papyrus-hopeline
+    name: PAPYRUS HOPELINE247
+    categories: [suicide, youth]
+    contacts:
+      phone: "0800 068 41 41"
+      sms: "88247"
+      email: pat@papyrus-uk.org
+      website: https://www.papyrus-uk.org
+    languages: [en]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: under 35s, parents, and concerned others
+    operator: ngo
+    operator_name: PAPYRUS Prevention of Young Suicide (charity)
+    source:
+      name: NHS — Helplines for mental health
+      url: https://www.nhs.uk/mental-health/advice-for-life-situations-and-events/where-to-get-urgent-help-for-mental-health/
+      type: government
+      last_verified: 2026-05-08
+
+metadata:
+  last_updated: 2026-05-08
+  last_scraped: 2026-05-08
+  verification_status: verified
+  data_sources:
+    - https://www.nhs.uk/mental-health/advice-for-life-situations-and-events/where-to-get-urgent-help-for-mental-health/

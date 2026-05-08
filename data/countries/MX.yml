@@ -1,0 +1,75 @@
+country:
+  iso_code: MX
+  iso3: MEX
+  name: Mexico
+  region: Americas
+  subregion: Central America
+
+emergency_services:
+  - name: Servicios de Emergencia
+    phone: "911"
+
+hotlines:
+  - id: mx-saptel
+    name: SAPTEL
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "55 5259-8121"
+      phone_alt: "800 290 0024"
+      website: http://www.saptel.org.mx
+    languages: [es]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo_government_funded
+    operator_name: SAPTEL (Cruz Roja Mexicana, listado por la Secretaría de Salud)
+    source:
+      name: Gobierno de México — Línea de la Vida
+      url: https://www.gob.mx/salud/conadic/acciones-y-programas/linea-de-la-vida
+      type: government
+      last_verified: 2026-05-08
+
+  - id: mx-linea-de-la-vida
+    name: Línea de la Vida
+    categories: [substance_abuse, mental_health, crisis]
+    contacts:
+      phone: "800 911 2000"
+      website: https://www.gob.mx/salud/conadic/acciones-y-programas/linea-de-la-vida
+    languages: [es]
+    hours:
+      type: 24/7
+    cost: free
+    operator: government
+    operator_name: Comisión Nacional contra las Adicciones (CONADIC)
+    source:
+      name: Gobierno de México — CONADIC
+      url: https://www.gob.mx/salud/conadic/acciones-y-programas/linea-de-la-vida
+      type: government
+      last_verified: 2026-05-08
+
+  - id: mx-911-mujer
+    name: 911 Mujeres
+    categories: [domestic_violence, sexual_assault]
+    contacts:
+      phone: "911"
+      website: https://www.gob.mx/conavim
+    languages: [es]
+    hours:
+      type: 24/7
+    cost: free
+    operator: government
+    operator_name: Comisión Nacional para Prevenir y Erradicar la Violencia contra las Mujeres (CONAVIM)
+    notes: Marcar 911 y solicitar atención especializada para mujeres víctimas de violencia.
+    source:
+      name: CONAVIM — Gobierno de México
+      url: https://www.gob.mx/conavim
+      type: government
+      last_verified: 2026-05-08
+
+metadata:
+  last_updated: 2026-05-08
+  last_scraped: 2026-05-08
+  verification_status: verified
+  data_sources:
+    - https://www.gob.mx/salud/conadic/acciones-y-programas/linea-de-la-vida
+    - https://www.gob.mx/conavim

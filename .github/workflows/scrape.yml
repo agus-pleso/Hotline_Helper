@@ -1,0 +1,72 @@
+name: Monthly scrape
+
+on:
+  schedule:
+    # 03:17 UTC on the 1st of every month — odd minute to avoid GH Actions cron stampede.
+    - cron: "17 3 1 * *"
+  workflow_dispatch:
+    inputs:
+      country:
+        description: "ISO 3166-1 alpha-2 code (leave blank for all countries)"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e ".[dev]"
+
+      - name: Validate before
+        run: hotline-helper validate
+
+      - name: Scrape
+        env:
+          INPUT_COUNTRY: ${{ inputs.country }}
+        run: |
+          if [ -n "$INPUT_COUNTRY" ]; then
+            hotline-helper scrape --country "$INPUT_COUNTRY" --write
+          else
+            hotline-helper scrape --write
+          fi
+
+      - name: Validate after
+        run: hotline-helper validate
+
+      - name: Open pull request with diff
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "data: monthly gov-source refresh"
+          title: "Monthly data refresh — ${{ steps.date.outputs.iso }}"
+          body: |
+            Automated monthly refresh of country YAML files from their cited
+            government sources.
+
+            **Maintainer review required.** Every changed entry is flipped to
+            `verification_status: unverified` until a maintainer confirms the
+            change against the cited source URL and re-flips it to `verified`.
+
+            Run locally to compare:
+
+            ```bash
+            hotline-helper scrape          # show diff only
+            hotline-helper scrape --write  # apply
+            hotline-helper validate
+            ```
+          branch: bot/monthly-scrape
+          delete-branch: true
+          labels: data-refresh,needs-review

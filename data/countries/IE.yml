@@ -1,0 +1,75 @@
+country:
+  iso_code: IE
+  iso3: IRL
+  name: Ireland
+  region: Europe
+  subregion: Northern Europe
+
+emergency_services:
+  - name: Emergency Services
+    phone: "112"
+    notes: 999 also accepted.
+
+hotlines:
+  - id: ie-samaritans
+    name: Samaritans Ireland
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "116 123"
+      email: jo@samaritans.ie
+      website: https://www.samaritans.org/ireland
+    languages: [en, ga]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo
+    operator_name: Samaritans Ireland (signposted by HSE)
+    source:
+      name: HSE — Mental health supports and services
+      url: https://www2.hse.ie/mental-health/services-support/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: ie-pieta
+    name: Pieta
+    categories: [suicide, crisis]
+    contacts:
+      phone: "1800 247 247"
+      sms: "51444"
+      website: https://www.pieta.ie
+    languages: [en]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo
+    operator_name: Pieta (signposted by HSE)
+    source:
+      name: HSE — Mental health supports and services
+      url: https://www2.hse.ie/mental-health/services-support/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: ie-text-50808
+    name: Text 50808
+    categories: [mental_health, crisis]
+    contacts:
+      sms: "50808"
+      website: https://text50808.ie
+    languages: [en]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo_government_funded
+    operator_name: Text 50808 (HSE-funded)
+    source:
+      name: HSE — Mental health supports and services
+      url: https://www2.hse.ie/mental-health/services-support/
+      type: government
+      last_verified: 2026-05-08
+
+metadata:
+  last_updated: 2026-05-08
+  last_scraped: 2026-05-08
+  verification_status: verified
+  data_sources:
+    - https://www2.hse.ie/mental-health/services-support/

@@ -1,0 +1,12 @@
+country:
+  iso_code: LR
+  iso3: LBR
+  name: 'Liberia'
+  region: Africa
+emergency_services: []
+hotlines: []
+metadata:
+  last_updated: 2026-05-08
+  verification_status: no_government_source
+  data_sources: []
+  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'

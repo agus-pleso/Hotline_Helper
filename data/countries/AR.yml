@@ -1,0 +1,58 @@
+country:
+  iso_code: AR
+  iso3: ARG
+  name: Argentina
+  region: Americas
+  subregion: South America
+
+emergency_services:
+  - name: Servicios de Emergencia
+    phone: "911"
+  - name: Emergencia Médica (SAME)
+    phone: "107"
+
+hotlines:
+  - id: ar-135
+    name: Centro de Asistencia al Suicida — 135
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "135"
+      phone_alt: "(011) 5275-1135"
+      website: https://www.casbuenosaires.com.ar
+    languages: [es]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo_government_funded
+    operator_name: Centro de Asistencia al Suicida — Buenos Aires (listado por el Ministerio de Salud)
+    source:
+      name: Ministerio de Salud Argentina — Suicidio
+      url: https://www.argentina.gob.ar/salud/mental-y-adicciones/suicidio
+      type: government
+      last_verified: 2026-05-08
+
+  - id: ar-144
+    name: Línea 144 — Atención a víctimas de violencia de género
+    categories: [domestic_violence, sexual_assault]
+    contacts:
+      phone: "144"
+      website: https://www.argentina.gob.ar/generos/linea-144
+    languages: [es]
+    hours:
+      type: 24/7
+    cost: free
+    operator: government
+    operator_name: Ministerio de las Mujeres, Géneros y Diversidad
+    source:
+      name: Línea 144 — Argentina.gob.ar
+      url: https://www.argentina.gob.ar/generos/linea-144
+      type: government
+      last_verified: 2026-05-08
+
+metadata:
+  last_updated: 2026-05-08
+  last_scraped: 2026-05-08
+  verification_status: verified
+  data_sources:
+    - https://www.argentina.gob.ar/salud/mental-y-adicciones/suicidio
+    - https://www.argentina.gob.ar/generos/linea-144

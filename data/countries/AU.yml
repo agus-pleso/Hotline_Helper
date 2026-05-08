@@ -1,0 +1,118 @@
+country:
+  iso_code: AU
+  iso3: AUS
+  name: Australia
+  region: Oceania
+  subregion: Australia and New Zealand
+
+emergency_services:
+  - name: Emergency Services
+    phone: "000"
+    notes: Police, fire, and ambulance.
+
+hotlines:
+  - id: au-lifeline
+    name: Lifeline Australia
+    categories: [suicide, crisis, mental_health]
+    contacts:
+      phone: "13 11 14"
+      sms: "0477 13 11 14"
+      chat_url: https://www.lifeline.org.au/crisis-chat/
+      website: https://www.lifeline.org.au
+    languages: [en]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo_government_funded
+    operator_name: Lifeline Australia (gov-funded NGO listed by healthdirect)
+    source:
+      name: healthdirect Australia — Mental health helplines
+      url: https://www.healthdirect.gov.au/mental-health-helplines
+      type: government
+      last_verified: 2026-05-08
+
+  - id: au-beyond-blue
+    name: Beyond Blue
+    categories: [mental_health, crisis]
+    contacts:
+      phone: "1300 22 4636"
+      chat_url: https://www.beyondblue.org.au/get-support/talk-to-a-counsellor/chat
+      website: https://www.beyondblue.org.au
+    languages: [en]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo_government_funded
+    operator_name: Beyond Blue (gov-funded NGO listed by healthdirect)
+    source:
+      name: healthdirect Australia — Mental health helplines
+      url: https://www.healthdirect.gov.au/mental-health-helplines
+      type: government
+      last_verified: 2026-05-08
+
+  - id: au-13yarn
+    name: 13YARN
+    categories: [suicide, crisis, mental_health]
+    contacts:
+      phone: "13 92 76"
+      website: https://www.13yarn.org.au
+    languages: [en]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: Aboriginal and Torres Strait Islander peoples
+    operator: ngo_government_funded
+    operator_name: 13YARN (Lifeline + Gayaa Dhuwi, gov-funded)
+    source:
+      name: healthdirect Australia — Mental health helplines
+      url: https://www.healthdirect.gov.au/mental-health-helplines
+      type: government
+      last_verified: 2026-05-08
+
+  - id: au-kids-helpline
+    name: Kids Helpline
+    categories: [youth, crisis, mental_health]
+    contacts:
+      phone: "1800 55 1800"
+      chat_url: https://kidshelpline.com.au/get-help/webchat-counselling
+      website: https://kidshelpline.com.au
+    languages: [en]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: children and young people aged 5–25
+    operator: ngo_government_funded
+    operator_name: Kids Helpline (yourtown, gov-funded)
+    source:
+      name: healthdirect Australia — Mental health helplines
+      url: https://www.healthdirect.gov.au/mental-health-helplines
+      type: government
+      last_verified: 2026-05-08
+
+  - id: au-1800respect
+    name: 1800RESPECT
+    categories: [domestic_violence, sexual_assault, crisis]
+    contacts:
+      phone: "1800 737 732"
+      sms: "0458 737 732"
+      chat_url: https://www.1800respect.org.au
+      website: https://www.1800respect.org.au
+    languages: [en]
+    hours:
+      type: 24/7
+    cost: free
+    operator: government
+    operator_name: Australian Government Department of Social Services
+    source:
+      name: 1800RESPECT (Australian Government)
+      url: https://www.1800respect.org.au
+      type: government
+      last_verified: 2026-05-08
+
+metadata:
+  last_updated: 2026-05-08
+  last_scraped: 2026-05-08
+  verification_status: verified
+  data_sources:
+    - https://www.healthdirect.gov.au/mental-health-helplines
+    - https://www.1800respect.org.au

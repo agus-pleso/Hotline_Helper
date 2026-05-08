@@ -1,0 +1,77 @@
+country:
+  iso_code: IT
+  iso3: ITA
+  name: Italy
+  region: Europe
+  subregion: Southern Europe
+
+emergency_services:
+  - name: European Emergency Number
+    phone: "112"
+
+hotlines:
+  - id: it-telefono-amico
+    name: Telefono Amico Italia
+    categories: [mental_health, crisis, suicide]
+    contacts:
+      phone: "02 2327 2327"
+      chat_url: https://www.telefonoamico.it/whatsapp/
+      website: https://www.telefonoamico.it
+    languages: [it]
+    hours:
+      type: custom
+      details: Daily 10:00–24:00 (CET/CEST)
+    cost: free
+    operator: ngo
+    operator_name: Telefono Amico Italia (signposted by Ministero della Salute)
+    source:
+      name: Ministero della Salute — Suicidio e prevenzione
+      url: https://www.salute.gov.it/portale/saluteMentale/dettaglioContenutiSaluteMentale.jsp?id=5538
+      type: government
+      last_verified: 2026-05-08
+
+  - id: it-telefono-azzurro
+    name: Telefono Azzurro
+    categories: [youth, child_abuse, crisis]
+    contacts:
+      phone: "19696"
+      chat_url: https://azzurro.it
+      website: https://azzurro.it
+    languages: [it]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: bambini e adolescenti
+    operator: ngo_government_funded
+    operator_name: SOS Il Telefono Azzurro (in convenzione con il Ministero del Lavoro)
+    source:
+      name: Ministero della Salute — Salute Mentale
+      url: https://www.salute.gov.it/portale/saluteMentale/dettaglioContenutiSaluteMentale.jsp?id=5538
+      type: government
+      last_verified: 2026-05-08
+
+  - id: it-1522
+    name: 1522 — Numero antiviolenza e stalking
+    categories: [domestic_violence, sexual_assault]
+    contacts:
+      phone: "1522"
+      website: https://www.1522.eu
+    languages: [it, en, fr, es, ar, ru]
+    hours:
+      type: 24/7
+    cost: free
+    operator: government
+    operator_name: Dipartimento per le Pari Opportunità — Presidenza del Consiglio dei Ministri
+    source:
+      name: Dipartimento per le Pari Opportunità — 1522
+      url: https://www.1522.eu
+      type: government
+      last_verified: 2026-05-08
+
+metadata:
+  last_updated: 2026-05-08
+  last_scraped: 2026-05-08
+  verification_status: verified
+  data_sources:
+    - https://www.salute.gov.it/portale/saluteMentale/dettaglioContenutiSaluteMentale.jsp?id=5538
+    - https://www.1522.eu

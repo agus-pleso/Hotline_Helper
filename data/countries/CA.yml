@@ -1,0 +1,84 @@
+country:
+  iso_code: CA
+  iso3: CAN
+  name: Canada
+  region: Americas
+  subregion: Northern America
+
+emergency_services:
+  - name: Emergency Services
+    phone: "911"
+
+hotlines:
+  - id: ca-988
+    name: 9-8-8 Suicide Crisis Helpline
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "988"
+      sms: "988"
+      website: https://988.ca
+    languages: [en, fr]
+    hours:
+      type: 24/7
+    cost: free
+    operator: government
+    operator_name: Centre for Addiction and Mental Health (CAMH), funded by the Public Health Agency of Canada
+    notes: |
+      Launched November 2023. Replaces previous Talk Suicide Canada line.
+      Available throughout Canada in English and French.
+    source:
+      name: Government of Canada — Mental health support
+      url: https://www.canada.ca/en/public-health/services/mental-health-services/mental-health-get-help.html
+      type: government
+      last_verified: 2026-05-08
+
+  - id: ca-kids-help-phone
+    name: Kids Help Phone
+    categories: [youth, crisis, mental_health]
+    contacts:
+      phone: 1-800-668-6868
+      sms: "686868"
+      chat_url: https://kidshelpphone.ca/live-chat-counselling/
+      website: https://kidshelpphone.ca
+    languages: [en, fr]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: children, teens, and young adults
+    operator: ngo_government_funded
+    operator_name: Kids Help Phone (federally supported via Public Health Agency of Canada)
+    source:
+      name: Government of Canada — Mental health support
+      url: https://www.canada.ca/en/public-health/services/mental-health-services/mental-health-get-help.html
+      type: government
+      last_verified: 2026-05-08
+
+  - id: ca-hope-for-wellness
+    name: Hope for Wellness Help Line
+    categories: [crisis, mental_health]
+    contacts:
+      phone: 1-855-242-3310
+      chat_url: https://www.hopeforwellness.ca
+      website: https://www.hopeforwellness.ca
+    languages: [en, fr]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: First Nations, Inuit, and Métis peoples
+    operator: government
+    operator_name: Indigenous Services Canada
+    notes: Counselling also available in Cree, Ojibway, and Inuktitut on request.
+    source:
+      name: Indigenous Services Canada — Hope for Wellness Help Line
+      url: https://www.sac-isc.gc.ca/eng/1576089519527/1576089566478
+      type: government
+      last_verified: 2026-05-08
+
+metadata:
+  last_updated: 2026-05-08
+  last_scraped: 2026-05-08
+  verification_status: verified
+  data_sources:
+    - https://www.canada.ca/en/public-health/services/mental-health-services/mental-health-get-help.html
+    - https://988.ca
+    - https://www.sac-isc.gc.ca/eng/1576089519527/1576089566478

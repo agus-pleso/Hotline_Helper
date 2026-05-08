@@ -1,0 +1,81 @@
+country:
+  iso_code: BR
+  iso3: BRA
+  name: Brazil
+  region: Americas
+  subregion: South America
+
+emergency_services:
+  - name: Police
+    phone: "190"
+  - name: Ambulance (SAMU)
+    phone: "192"
+
+hotlines:
+  - id: br-188-cvv
+    name: CVV — Centro de Valorização da Vida
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "188"
+      chat_url: https://cvv.org.br/chat/
+      email: atendimento@cvv.org.br
+      website: https://cvv.org.br
+    languages: [pt]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo_government_funded
+    operator_name: CVV (parceria com Ministério da Saúde — gratuita desde 2017)
+    notes: |
+      Apoio emocional e prevenção do suicídio. Atendimento gratuito e sigiloso
+      em parceria com o SUS.
+    source:
+      name: Ministério da Saúde — Setembro Amarelo
+      url: https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/suicidio
+      type: government
+      last_verified: 2026-05-08
+
+  - id: br-180
+    name: Ligue 180 — Central de Atendimento à Mulher
+    categories: [domestic_violence, sexual_assault]
+    contacts:
+      phone: "180"
+      website: https://www.gov.br/mdh/pt-br/ligue180
+    languages: [pt]
+    hours:
+      type: 24/7
+    cost: free
+    operator: government
+    operator_name: Ministério das Mulheres
+    source:
+      name: Ministério das Mulheres — Ligue 180
+      url: https://www.gov.br/mdh/pt-br/ligue180
+      type: government
+      last_verified: 2026-05-08
+
+  - id: br-100
+    name: Disque 100 — Direitos Humanos
+    categories: [child_abuse, elder_abuse, lgbtq, discrimination]
+    contacts:
+      phone: "100"
+      website: https://www.gov.br/mdh/pt-br/ondh/disque100
+    languages: [pt]
+    hours:
+      type: 24/7
+    cost: free
+    operator: government
+    operator_name: Ministério dos Direitos Humanos e da Cidadania
+    source:
+      name: Ministério dos Direitos Humanos — Disque 100
+      url: https://www.gov.br/mdh/pt-br/ondh/disque100
+      type: government
+      last_verified: 2026-05-08
+
+metadata:
+  last_updated: 2026-05-08
+  last_scraped: 2026-05-08
+  verification_status: verified
+  data_sources:
+    - https://www.gov.br/saude/pt-br/assuntos/saude-de-a-a-z/s/suicidio
+    - https://www.gov.br/mdh/pt-br/ligue180
+    - https://www.gov.br/mdh/pt-br/ondh/disque100
