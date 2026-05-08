@@ -1,12 +1,84 @@
 country:
   iso_code: IS
   iso3: ISL
-  name: 'Iceland'
+  name: Iceland
   region: Europe
-emergency_services: []
-hotlines: []
+  subregion: Northern Europe
+
+emergency_services:
+  - name: Emergency Services
+    phone: "112"
+
+hotlines:
+  - id: is-1717-red-cross
+    name: Hjálparsími Rauða krossins 1717
+    aliases:
+      - Red Cross Helpline 1717
+    categories: [mental_health, crisis, suicide]
+    contacts:
+      phone: "1717"
+      chat_url: https://1717.is
+      website: https://1717.is
+    languages: [is]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo_government_funded
+    operator_name: Icelandic Red Cross (signposted by 112.is)
+    source:
+      name: 112.is — Heilsuvera resource page
+      url: https://www.112.is/en/resources/heilsuvera
+      type: government
+      last_verified: 2026-05-08
+
+  - id: is-heilsuvera-1700
+    name: Heilsuvera (Læknavaktin)
+    categories: [mental_health, crisis]
+    contacts:
+      phone: "513 1700"
+      chat_url: https://www.heilsuvera.is
+      website: https://www.heilsuvera.is
+    languages: [is]
+    hours:
+      type: 24/7
+    cost: free
+    operator: government
+    operator_name: Heilsugæsla höfuðborgarsvæðisins (Primary Health Care of the Capital Area)
+    notes: |
+      24-hour nurse advice line. Webchat available Mon–Fri 08:00–15:30 (GMT).
+      Translation available best-effort for non-Icelandic speakers.
+    source:
+      name: 112.is — Heilsuvera resource page
+      url: https://www.112.is/en/resources/heilsuvera
+      type: government
+      last_verified: 2026-05-08
+
+  - id: is-pieta-iceland
+    name: Píeta samtökin
+    categories: [suicide, crisis]
+    contacts:
+      phone: "552-2218"
+      website: https://pieta.is
+    languages: [is]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: people with suicidal thoughts and the bereaved
+    operator: ngo
+    operator_name: Píeta samtökin (signposted by Iceland's national emergency portal)
+    source:
+      name: 112.is — Heilsuvera resource page
+      url: https://www.112.is/en/resources/heilsuvera
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://www.112.is/en/resources/heilsuvera
+    - https://1717.is
+  notes: |
+    Added in Wave 1 of country expansion. Cited gov source: 112.is — Iceland's national
+    emergency-services portal — which links to the Red Cross 1717 helpline and Heilsuvera 513 1700.
+    Maintainer should re-verify each entry against the source page, then flip to verified.

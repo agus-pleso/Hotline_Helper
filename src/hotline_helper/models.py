@@ -149,10 +149,13 @@ class Hotline(BaseModel):
 
     model_config = ConfigDict(use_enum_values=True, str_strip_whitespace=True)
 
-    @field_validator("languages")
+    @field_validator("languages", mode="before")
     @classmethod
-    def _normalize_languages(cls, v: list[str]) -> list[str]:
-        return [lang.strip().lower() for lang in v if lang.strip()]
+    def _normalize_languages(cls, v: list) -> list[str]:
+        # YAML 1.1 parses `no`/`yes` as booleans. ISO 639-1 codes for
+        # Norwegian (`no`) and others end up as Python bools — coerce them back.
+        coerced = ["no" if x is False else "yes" if x is True else x for x in v]
+        return [str(lang).strip().lower() for lang in coerced if str(lang).strip()]
 
     @field_validator("contacts")
     @classmethod

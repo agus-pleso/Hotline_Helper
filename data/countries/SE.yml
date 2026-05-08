@@ -1,12 +1,68 @@
 country:
   iso_code: SE
   iso3: SWE
-  name: 'Sweden'
+  name: Sweden
   region: Europe
-emergency_services: []
-hotlines: []
+  subregion: Northern Europe
+
+emergency_services:
+  - name: European Emergency Number
+    phone: "112"
+    notes: For acute psychiatric emergencies, dial 112.
+  - name: National Health Hotline
+    phone: "1177"
+    notes: Non-emergency healthcare advice.
+
+hotlines:
+  - id: se-mind-sjalvmordslinjen
+    name: Mind Självmordslinjen
+    aliases:
+      - Mind Suicide Line
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "90101"
+      chat_url: https://mind.se/sjalvmordslinjen/
+      email: sjalvmordslinjen@mind.se
+      website: https://mind.se
+    languages: [sv, en]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: people with suicidal thoughts and their loved ones
+    operator: ngo
+    operator_name: Mind (signposted by Folkhälsomyndigheten)
+    source:
+      name: Folkhälsomyndigheten — Suicide prevention
+      url: https://www.folkhalsomyndigheten.se/the-public-health-agency-of-sweden/living-conditions-and-lifestyle/mental-health/suicide-prevention/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: se-1177
+    name: 1177 — Sjukvårdsrådgivningen
+    categories: [mental_health, crisis]
+    contacts:
+      phone: "1177"
+      website: https://www.1177.se
+    languages: [sv, en]
+    hours:
+      type: 24/7
+    cost: free
+    operator: government
+    operator_name: Sveriges regioner (Swedish regional health authorities)
+    notes: National health information line; signposted by the Public Health Agency for non-emergency mental-health support and routing to local services.
+    source:
+      name: Folkhälsomyndigheten — Suicide prevention
+      url: https://www.folkhalsomyndigheten.se/the-public-health-agency-of-sweden/living-conditions-and-lifestyle/mental-health/suicide-prevention/
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://www.folkhalsomyndigheten.se/the-public-health-agency-of-sweden/living-conditions-and-lifestyle/mental-health/suicide-prevention/
+    - https://www.1177.se
+  notes: |
+    Added in Wave 1 of country expansion. Cited gov source: Folkhälsomyndigheten
+    (Public Health Agency of Sweden) suicide-prevention page, which lists Mind Självmordslinjen 90101 and 1177.
+    Maintainer should re-verify the source page still backs each entry, then flip to verified.

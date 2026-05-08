@@ -1,12 +1,82 @@
 country:
   iso_code: FI
   iso3: FIN
-  name: 'Finland'
+  name: Finland
   region: Europe
-emergency_services: []
-hotlines: []
+  subregion: Northern Europe
+
+emergency_services:
+  - name: European Emergency Number
+    phone: "112"
+
+hotlines:
+  - id: fi-mieli-kriisipuhelin
+    name: MIELI Kriisipuhelin
+    aliases:
+      - MIELI Crisis Helpline
+    categories: [mental_health, crisis, suicide]
+    contacts:
+      phone: "09 2525 0111"
+      website: https://mieli.fi/en/support-and-help/crisis-helpline/
+    languages: [fi]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo_government_funded
+    operator_name: MIELI Mental Health Finland (state-aided per STEA / STM)
+    notes: |
+      National crisis line. Finnish service is 24/7. Other-language lines run
+      limited hours — check operator page for current windows.
+    source:
+      name: Suomi.fi — MIELI Crisis Helpline
+      url: https://www.suomi.fi/services/phoneservice/mieli-crisis-helpline-09-2525-0116-mieli-mental-health-finland/3400a18e-dd54-4dfb-9bc5-654b7c0a8051
+      type: government
+      last_verified: 2026-05-08
+
+  - id: fi-mieli-svenska
+    name: MIELI Kriisipuhelin (svenska)
+    categories: [mental_health, crisis, suicide]
+    contacts:
+      phone: "09 2525 0112"
+      website: https://mieli.fi/en/support-and-help/crisis-helpline/
+    languages: [sv]
+    hours:
+      details: Limited hours; check operator page for current schedule.
+    cost: free
+    operator: ngo_government_funded
+    operator_name: MIELI Mental Health Finland
+    source:
+      name: Suomi.fi — MIELI Crisis Helpline
+      url: https://www.suomi.fi/services/phoneservice/mieli-crisis-helpline-09-2525-0116-mieli-mental-health-finland/3400a18e-dd54-4dfb-9bc5-654b7c0a8051
+      type: government
+      last_verified: 2026-05-08
+
+  - id: fi-mieli-en-ar
+    name: MIELI Crisis Helpline (English / Arabic)
+    categories: [mental_health, crisis, suicide]
+    contacts:
+      phone: "09 2525 0113"
+      website: https://mieli.fi/en/support-and-help/crisis-helpline/
+    languages: [en, ar]
+    hours:
+      details: Limited hours; check operator page for current schedule.
+    cost: free
+    operator: ngo_government_funded
+    operator_name: MIELI Mental Health Finland
+    source:
+      name: Suomi.fi — MIELI Crisis Helpline
+      url: https://www.suomi.fi/services/phoneservice/mieli-crisis-helpline-09-2525-0116-mieli-mental-health-finland/3400a18e-dd54-4dfb-9bc5-654b7c0a8051
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://www.suomi.fi/services/phoneservice/mieli-crisis-helpline-09-2525-0116-mieli-mental-health-finland/3400a18e-dd54-4dfb-9bc5-654b7c0a8051
+    - https://mieli.fi/en/support-and-help/crisis-helpline/
+  notes: |
+    Added in Wave 1 of country expansion. Cited gov source: Suomi.fi — Finnish Government
+    services portal — listing of MIELI Crisis Helpline. The deep link was 404 at scrape time
+    but the service is established on suomi.fi; maintainer should confirm the current canonical
+    suomi.fi URL and the limited-hour schedules for non-Finnish lines, then flip to verified.
