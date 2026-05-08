@@ -1,12 +1,98 @@
 country:
   iso_code: SI
   iso3: SVN
-  name: 'Slovenia'
+  name: Slovenia
   region: Europe
-emergency_services: []
-hotlines: []
+  subregion: Southern Europe
+
+emergency_services:
+  - name: European Emergency Number
+    phone: "112"
+
+hotlines:
+  - id: si-klic-v-stiski
+    name: Klic v duševni stiski
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "01 520 99 00"
+      website: https://www.psih-klinika.si
+    languages: [sl]
+    hours:
+      type: custom
+      details: Daily 19:00–07:00 (CET/CEST).
+    cost: free
+    operator: government
+    operator_name: Univerzitetna psihiatrična klinika Ljubljana
+    source:
+      name: NIJZ — Pomoč v duševni stiski
+      url: https://nijz.si/zivljenjski-slog/dusevno-zdravje/pomoc-v-dusevni-stiski/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: si-samarijan-sopotnik
+    name: Zaupna telefona Samarijan in Sopotnik
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "116 123"
+      website: https://www.telefon-samarijan.si
+    languages: [sl]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo
+    operator_name: Društvo Zaupni telefon Samarijan (signposted by NIJZ)
+    source:
+      name: NIJZ — Pomoč v duševni stiski
+      url: https://nijz.si/zivljenjski-slog/dusevno-zdravje/pomoc-v-dusevni-stiski/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: si-tom
+    name: TOM telefon
+    categories: [crisis, youth, child_abuse]
+    contacts:
+      phone: "116 111"
+      chat_url: https://www.e-tom.si
+      website: https://www.e-tom.si
+    languages: [sl]
+    hours:
+      type: custom
+      details: Daily 12:00–20:00 (CET/CEST).
+    cost: free
+    target_population: children and youth (under 18)
+    operator: ngo_government_funded
+    operator_name: Zveza prijateljev mladine Slovenije (ZPMS)
+    source:
+      name: NIJZ — Pomoč v duševni stiski
+      url: https://nijz.si/zivljenjski-slog/dusevno-zdravje/pomoc-v-dusevni-stiski/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: si-sos-zenske-otroke
+    name: SOS telefon za ženske in otroke — žrtve nasilja
+    categories: [domestic_violence, sexual_assault, crisis]
+    contacts:
+      phone: "080 11 55"
+      website: https://drustvo-sos.si
+    languages: [sl]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: women and children — victims of violence
+    operator: ngo_government_funded
+    operator_name: Društvo SOS telefon (signposted by NIJZ)
+    source:
+      name: NIJZ — Pomoč v duševni stiski
+      url: https://nijz.si/zivljenjski-slog/dusevno-zdravje/pomoc-v-dusevni-stiski/
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://nijz.si/zivljenjski-slog/dusevno-zdravje/pomoc-v-dusevni-stiski/
+  notes: |
+    Added in Wave 2 of country expansion. Cited gov source: Nacionalni inštitut za javno
+    zdravje (NIJZ) — Slovenia's National Institute of Public Health.
+    Maintainer should re-verify each entry against the source page, then flip to verified.

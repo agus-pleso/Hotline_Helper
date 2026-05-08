@@ -1,12 +1,84 @@
 country:
   iso_code: LU
   iso3: LUX
-  name: 'Luxembourg'
+  name: Luxembourg
   region: Europe
-emergency_services: []
-hotlines: []
+  subregion: Western Europe
+
+emergency_services:
+  - name: European Emergency Number
+    phone: "112"
+
+hotlines:
+  - id: lu-sos-detresse
+    name: SOS Détresse — Hëllef iwwer Telefon
+    categories: [suicide, crisis, mental_health]
+    contacts:
+      phone: "45 45 45"
+      phone_alt: "+352 45 45 45"
+      chat_url: https://454545.lu
+      website: https://www.454545.lu
+    languages: [lb, fr, de, en]
+    hours:
+      type: unknown
+    cost: free
+    operator: ngo_government_funded
+    operator_name: SOS Détresse a.s.b.l. (signposted by Ministère de la Santé)
+    source:
+      name: Portail Santé Luxembourg — Prévention du suicide
+      url: https://santesecu.public.lu/fr/sujets/maladies-soins/sante-mentale/prevention-suicide.html
+      type: government
+      last_verified: 2026-05-08
+
+  - id: lu-kanner-jugendtelefon
+    name: Kanner-Jugendtelefon (KJT)
+    categories: [youth, child_abuse, crisis, mental_health]
+    contacts:
+      phone: "116 111"
+      chat_url: https://www.kjt.lu
+      website: https://www.kjt.lu
+    languages: [lb, fr, de]
+    hours:
+      type: unknown
+    cost: free
+    target_population: children and young people
+    operator: ngo_government_funded
+    operator_name: Kanner-Jugendtelefon (signposted by Ministère de la Santé)
+    source:
+      name: Portail Santé Luxembourg — Prévention du suicide
+      url: https://santesecu.public.lu/fr/sujets/maladies-soins/sante-mentale/prevention-suicide.html
+      type: government
+      last_verified: 2026-05-08
+
+  - id: lu-prevention-suicide
+    name: Ligue Luxembourgeoise d'Hygiène Mentale — Prévention Suicide
+    categories: [suicide, mental_health]
+    contacts:
+      phone: "+352 45 55 33"
+      website: https://www.prevention-suicide.lu
+    languages: [fr, de, lb]
+    hours:
+      type: business_hours
+      details: Office consultations during weekday hours.
+    cost: free
+    operator: ngo_government_funded
+    operator_name: Ligue Luxembourgeoise d'Hygiène Mentale (gov-accredited)
+    source:
+      name: Portail Santé Luxembourg — Prévention du suicide
+      url: https://santesecu.public.lu/fr/sujets/maladies-soins/sante-mentale/prevention-suicide.html
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://santesecu.public.lu/fr/sujets/maladies-soins/sante-mentale/prevention-suicide.html
+    - https://www.prevention-suicide.lu
+  notes: |
+    Added in Wave 2 of country expansion. Cited gov source: Portail Santé Luxembourg
+    (Ministère de la Santé) — Plan national de prévention du suicide. The .public.lu page
+    blocks bot access (403); content corroborated via gov-published Plan PDFs and the
+    Ligue Luxembourgeoise d'Hygiène Mentale (gov-accredited operator).
+    Maintainer should manually open the source URL, confirm the listed services, and update
+    `hours` fields (currently `unknown`), then flip to verified.

@@ -1,12 +1,122 @@
 country:
   iso_code: PL
   iso3: POL
-  name: 'Poland'
+  name: Poland
   region: Europe
-emergency_services: []
-hotlines: []
+  subregion: Eastern Europe
+
+emergency_services:
+  - name: European Emergency Number
+    phone: "112"
+  - name: Ambulance
+    phone: "999"
+
+hotlines:
+  - id: pl-116111-children
+    name: Telefon Zaufania dla Dzieci i Młodzieży
+    categories: [crisis, mental_health, youth, child_abuse]
+    contacts:
+      phone: "116 111"
+      chat_url: https://116111.pl
+      website: https://116111.pl
+    languages: [pl]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: children and adolescents (under 18)
+    operator: ngo_government_funded
+    operator_name: Fundacja Dajemy Dzieciom Siłę (signposted by Ministerstwo Zdrowia)
+    source:
+      name: Ministerstwo Zdrowia — Gdzie uzyskać pomoc psychologiczną i psychiatryczną
+      url: https://www.gov.pl/web/zdrowie/gdzie-uzyskac-pomoc-psychologiczna-i-psychiatryczna
+      type: government
+      last_verified: 2026-05-08
+
+  - id: pl-800-12-12-12-rzecznik
+    name: Dziecięcy Telefon Zaufania Rzecznika Praw Dziecka
+    categories: [child_abuse, youth, crisis]
+    contacts:
+      phone: "800 12 12 12"
+      website: https://brpd.gov.pl
+    languages: [pl]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: children
+    operator: government
+    operator_name: Rzecznik Praw Dziecka (Office of the Ombudsman for Children)
+    source:
+      name: Ministerstwo Zdrowia — Gdzie uzyskać pomoc psychologiczną i psychiatryczną
+      url: https://www.gov.pl/web/zdrowie/gdzie-uzyskac-pomoc-psychologiczna-i-psychiatryczna
+      type: government
+      last_verified: 2026-05-08
+
+  - id: pl-800-70-2222-itaka
+    name: Centrum Wsparcia dla Osób Dorosłych w Kryzysie Psychicznym
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "800 70 2222"
+      chat_url: https://centrumwsparcia.pl
+      website: https://centrumwsparcia.pl
+    languages: [pl]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: adults in psychological crisis
+    operator: ngo_government_funded
+    operator_name: Fundacja ITAKA (signposted by Ministerstwo Zdrowia)
+    source:
+      name: Ministerstwo Zdrowia — Gdzie uzyskać pomoc psychologiczną i psychiatryczną
+      url: https://www.gov.pl/web/zdrowie/gdzie-uzyskac-pomoc-psychologiczna-i-psychiatryczna
+      type: government
+      last_verified: 2026-05-08
+
+  - id: pl-800-199-990-uzaleznienia
+    name: Ogólnopolski Telefon Zaufania Uzależnienia
+    categories: [substance_abuse, crisis, mental_health]
+    contacts:
+      phone: "800 199 990"
+      website: https://kcpu.gov.pl
+    languages: [pl]
+    hours:
+      type: custom
+      details: Daily 16:00–21:00 (CET/CEST).
+    cost: free
+    target_population: people with addictions and their families
+    operator: government
+    operator_name: Krajowe Centrum Przeciwdziałania Uzależnieniom
+    source:
+      name: Ministerstwo Zdrowia — Gdzie uzyskać pomoc psychologiczną i psychiatryczną
+      url: https://www.gov.pl/web/zdrowie/gdzie-uzyskac-pomoc-psychologiczna-i-psychiatryczna
+      type: government
+      last_verified: 2026-05-08
+
+  - id: pl-116-123-poradnia
+    name: Ogólnopolska Poradnia Telefoniczna dla Osób w Kryzysie Emocjonalnym
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "116 123"
+      chat_url: https://116sos.pl
+      website: https://116sos.pl
+    languages: [pl]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: adults in emotional crisis
+    operator: ngo_government_funded
+    operator_name: Instytut Psychologii Zdrowia PTP (signposted by Ministerstwo Zdrowia)
+    source:
+      name: Ministerstwo Zdrowia — Gdzie uzyskać pomoc psychologiczną i psychiatryczną
+      url: https://www.gov.pl/web/zdrowie/gdzie-uzyskac-pomoc-psychologiczna-i-psychiatryczna
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://www.gov.pl/web/zdrowie/gdzie-uzyskac-pomoc-psychologiczna-i-psychiatryczna
+  notes: |
+    Added in Wave 2 of country expansion. Cited gov source: Ministerstwo Zdrowia (Polish
+    Ministry of Health) — "Gdzie uzyskać pomoc psychologiczną i psychiatryczną" page.
+    Maintainer should re-verify each entry against the source page, then flip to verified.

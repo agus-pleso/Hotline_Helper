@@ -1,12 +1,120 @@
 country:
   iso_code: SK
   iso3: SVK
-  name: 'Slovakia'
+  name: Slovakia
   region: Europe
-emergency_services: []
-hotlines: []
+  subregion: Eastern Europe
+
+emergency_services:
+  - name: European Emergency Number
+    phone: "112"
+
+hotlines:
+  - id: sk-nlpdz
+    name: Národná linka na podporu duševného zdravia (NLPDZ)
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "0800 193 193"
+      chat_url: https://www.nlpdz.sk
+      website: https://www.nlpdz.sk
+    languages: [sk]
+    hours:
+      type: custom
+      details: Daily 10:00–22:00 (CET/CEST), incl. weekends and public holidays.
+    cost: free
+    operator: government
+    operator_name: Ministerstvo zdravotníctva SR (NLPDZ project)
+    source:
+      name: Ministerstvo zdravotníctva SR — NLPDZ Kontakty podpory
+      url: https://www.nlpdz.sk/sk/kontakty-podpory/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: sk-nezabudka
+    name: Linka dôvery Nezábudka
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "0800 800 566"
+      website: https://www.linkanezabudka.sk
+    languages: [sk]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo_government_funded
+    operator_name: Liga za duševné zdravie (signposted by NLPDZ / MZ SR)
+    source:
+      name: Ministerstvo zdravotníctva SR — NLPDZ Kontakty podpory
+      url: https://www.nlpdz.sk/sk/kontakty-podpory/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: sk-zastavme-nasilie
+    name: Národná linka pre ženy zažívajúce násilie
+    categories: [domestic_violence, sexual_assault, crisis]
+    contacts:
+      phone: "0800 212 212"
+      website: https://www.zastavmenasilie.gov.sk
+    languages: [sk]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: women experiencing violence
+    operator: government
+    operator_name: Inštitút pre výskum práce a rodiny (under MPSVR SR)
+    source:
+      name: Ministerstvo zdravotníctva SR — NLPDZ Kontakty podpory
+      url: https://www.nlpdz.sk/sk/kontakty-podpory/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: sk-ipcko
+    name: IPčko krízová linka pomoci
+    categories: [suicide, mental_health, crisis, youth]
+    contacts:
+      phone: "0800 500 333"
+      chat_url: https://ipcko.sk
+      website: https://ipcko.sk
+    languages: [sk]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: youth and general
+    operator: ngo_government_funded
+    operator_name: IPčko, o.z. (signposted by NLPDZ / MZ SR)
+    source:
+      name: Ministerstvo zdravotníctva SR — NLPDZ Kontakty podpory
+      url: https://www.nlpdz.sk/sk/kontakty-podpory/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: sk-linka-detskej-istoty
+    name: Linka detskej istoty
+    categories: [crisis, youth, child_abuse]
+    contacts:
+      phone: "116 111"
+      website: https://www.ldi.sk
+    languages: [sk]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: children and youth up to 18
+    operator: ngo_government_funded
+    operator_name: Linka detskej istoty, n.o. (signposted by NLPDZ / MZ SR)
+    source:
+      name: Ministerstvo zdravotníctva SR — NLPDZ Kontakty podpory
+      url: https://www.nlpdz.sk/sk/kontakty-podpory/
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://www.nlpdz.sk/sk/kontakty-podpory/
+    - https://www.health.gov.sk/Titulka
+  notes: |
+    Added in Wave 2 of country expansion. Cited gov source: Národná linka na podporu
+    duševného zdravia (NLPDZ) — a project of the Slovak Ministry of Health (MZ SR).
+    The nlpdz.sk site had a TLS issue at scrape time; entries corroborated via
+    health.gov.sk banners and search snippets.
+    Maintainer should manually open the source URL and confirm each entry, then flip to verified.

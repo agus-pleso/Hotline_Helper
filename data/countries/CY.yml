@@ -1,12 +1,99 @@
 country:
   iso_code: CY
   iso3: CYP
-  name: 'Cyprus'
+  name: Cyprus
   region: Asia
-emergency_services: []
-hotlines: []
+  subregion: Western Asia
+
+emergency_services:
+  - name: European Emergency Number
+    phone: "112"
+
+hotlines:
+  - id: cy-1401-mental-health
+    name: Mental Health Services Crisis Helpline 1401
+    categories: [mental_health, crisis, suicide]
+    contacts:
+      phone: "1401"
+      website: https://www.moh.gov.cy
+    languages: [el, en]
+    hours:
+      type: 24/7
+    cost: free
+    operator: government
+    operator_name: Mental Health Services, Ministry of Health Cyprus
+    source:
+      name: Ministry of Health (Republic of Cyprus) — Mental Health Services
+      url: https://www.gov.cy/moh/en/about/mental-health-services/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: cy-1410-onek
+    name: 1410 — Ψυχοκοινωνική Στήριξη (ONEK)
+    categories: [mental_health, youth]
+    contacts:
+      phone: "1410"
+      website: https://onek.org.cy
+    languages: [el]
+    hours:
+      type: unknown
+    cost: free
+    target_population: youth
+    operator: government
+    operator_name: Youth Organization of Cyprus (ONEK)
+    source:
+      name: Ministry of Health (Republic of Cyprus) — Mental Health Services
+      url: https://www.gov.cy/moh/en/about/mental-health-services/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: cy-1440-spavo
+    name: 1440 — Domestic Violence Hotline (SPAVO)
+    categories: [domestic_violence]
+    contacts:
+      phone: "1440"
+      website: https://www.domviolence.org.cy
+    languages: [el, en]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: victims of domestic and gender-based violence
+    operator: ngo_government_funded
+    operator_name: SPAVO — Association for the Prevention and Handling of Violence in the Family
+    source:
+      name: Ministry of Health (Republic of Cyprus) — Mental Health Services
+      url: https://www.gov.cy/moh/en/about/mental-health-services/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: cy-116111-children
+    name: 116 111 — Children and Teen Support Line
+    categories: [youth, child_abuse]
+    contacts:
+      phone: "116 111"
+    languages: [el]
+    hours:
+      type: unknown
+    cost: free
+    target_population: children and teenagers
+    operator: ngo_government_funded
+    operator_name: Hope For Children CRC Policy Center
+    source:
+      name: Ministry of Health (Republic of Cyprus) — Mental Health Services
+      url: https://www.gov.cy/moh/en/about/mental-health-services/
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://www.gov.cy/moh/en/about/mental-health-services/
+    - https://onek.org.cy
+  notes: |
+    Added in Wave 2 of country expansion. Cited gov source: Ministry of Health (Republic of Cyprus).
+    The gov.cy/moh page returned 403 to bot fetches; entries corroborated via search snippets and
+    the gov-supported ONEK youth-organization helpline directory. The Council of Ministers approved
+    a National Mental Health Strategy 2025–2028 in March 2025.
+    Maintainer should manually open the source URL, confirm hours/operator details
+    (several `unknown` placeholders), then flip to verified.

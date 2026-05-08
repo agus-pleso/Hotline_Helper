@@ -1,12 +1,121 @@
 country:
   iso_code: EE
   iso3: EST
-  name: 'Estonia'
+  name: Estonia
   region: Europe
-emergency_services: []
-hotlines: []
+  subregion: Northern Europe
+
+emergency_services:
+  - name: European Emergency Number
+    phone: "112"
+
+hotlines:
+  - id: ee-1247-state-helpline
+    name: Riigiinfo telefon (State helpline) 1247
+    categories: [crisis, mental_health]
+    contacts:
+      phone: "1247"
+      chat_url: https://www.palunabi.ee
+      website: https://www.palunabi.ee
+    languages: [et, ru, en]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: general (incl. first responders)
+    operator: government
+    operator_name: Häirekeskus (Estonian Emergency Response Centre)
+    source:
+      name: Kriis.ee — Mental health (Estonian Government crisis information portal)
+      url: https://kriis.ee/en/covid-sickness-health-vaccinations/coronavirus-and-preventing-its-spread/mental-health
+      type: government
+      last_verified: 2026-05-08
+
+  - id: ee-116-111-lasteabi
+    name: Lasteabi
+    categories: [crisis, youth, child_abuse]
+    contacts:
+      phone: "116 111"
+      chat_url: https://www.lasteabi.ee
+      website: https://www.lasteabi.ee
+    languages: [et, ru, en]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: children, parents, and professionals
+    operator: government
+    operator_name: Sotsiaalkindlustusamet (Social Insurance Board)
+    source:
+      name: Kriis.ee — Mental health (Estonian Government crisis information portal)
+      url: https://kriis.ee/en/covid-sickness-health-vaccinations/coronavirus-and-preventing-its-spread/mental-health
+      type: government
+      last_verified: 2026-05-08
+
+  - id: ee-116-123-hingehoiu
+    name: Hingehoiu telefon
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "116 123"
+      website: https://www.hingehoid.ee
+    languages: [et]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: people in spiritual or emotional crisis
+    operator: ngo
+    operator_name: Eesti Kirikute Nõukogu (signposted by Kriis.ee)
+    source:
+      name: Kriis.ee — Mental health (Estonian Government crisis information portal)
+      url: https://kriis.ee/en/covid-sickness-health-vaccinations/coronavirus-and-preventing-its-spread/mental-health
+      type: government
+      last_verified: 2026-05-08
+
+  - id: ee-eluliin
+    name: Eluliin — Emotional Support Lifeline
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "655 8088"
+      phone_alt: "655 5688"
+      website: https://www.eluliin.ee
+    languages: [et, ru]
+    hours:
+      type: custom
+      details: Daily 19:00–07:00 (EET/EEST). Estonian on 655 8088, Russian on 655 5688.
+    cost: free
+    operator: ngo_government_funded
+    operator_name: MTÜ Eluliin (signposted by Kriis.ee)
+    source:
+      name: Kriis.ee — Mental health (Estonian Government crisis information portal)
+      url: https://kriis.ee/en/covid-sickness-health-vaccinations/coronavirus-and-preventing-its-spread/mental-health
+      type: government
+      last_verified: 2026-05-08
+
+  - id: ee-116-006-victim-support
+    name: Ohvriabi kriisitelefon (Victim Support)
+    categories: [domestic_violence, sexual_assault, crisis]
+    contacts:
+      phone: "116 006"
+      chat_url: https://www.palunabi.ee
+      website: https://sotsiaalkindlustusamet.ee
+    languages: [et, ru, en]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: victims of crime and violence
+    operator: government
+    operator_name: Sotsiaalkindlustusamet (Social Insurance Board)
+    source:
+      name: Kriis.ee — Mental health (Estonian Government crisis information portal)
+      url: https://kriis.ee/en/covid-sickness-health-vaccinations/coronavirus-and-preventing-its-spread/mental-health
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://kriis.ee/en/covid-sickness-health-vaccinations/coronavirus-and-preventing-its-spread/mental-health
+    - https://www.sotsiaalkindlustusamet.ee/en/news/crisis-hotline-1247-now-offers-psychological-first-aid
+  notes: |
+    Added in Wave 2 of country expansion. Cited gov source: Kriis.ee — Estonia's official
+    government crisis-information portal — and Sotsiaalkindlustusamet (Social Insurance Board).
+    Maintainer should re-verify each entry against the source page, then flip to verified.

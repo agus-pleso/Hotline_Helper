@@ -1,12 +1,95 @@
 country:
   iso_code: MT
   iso3: MLT
-  name: 'Malta'
+  name: Malta
   region: Europe
-emergency_services: []
-hotlines: []
+  subregion: Southern Europe
+
+emergency_services:
+  - name: European Emergency Number
+    phone: "112"
+
+hotlines:
+  - id: mt-1579-mental-health
+    name: National Mental Health Helpline 1579
+    categories: [mental_health, crisis, suicide]
+    contacts:
+      phone: "1579"
+      website: https://health.gov.mt/mental-health-helpline1579/
+    languages: [mt, en]
+    hours:
+      type: 24/7
+    cost: free
+    operator: government
+    operator_name: Ministry for Health, Malta — Mental Health Services
+    source:
+      name: Ministry for Health Malta — Mental Health Helpline 1579
+      url: https://health.gov.mt/mental-health-helpline1579/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: mt-179-supportline
+    name: Supportline 179
+    categories: [crisis, domestic_violence, child_abuse, mental_health]
+    contacts:
+      phone: "179"
+      website: https://fsws.gov.mt
+    languages: [mt, en]
+    hours:
+      type: 24/7
+    cost: free
+    operator: government
+    operator_name: Aġenzija Appoġġ (Foundation for Social Welfare Services)
+    source:
+      name: Ministry for Health Malta — Mental Health Helpline 1579
+      url: https://health.gov.mt/mental-health-helpline1579/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: mt-1770-richmond
+    name: Richmond Foundation Helpline 1770
+    categories: [mental_health, crisis]
+    contacts:
+      phone: "1770"
+      website: https://www.richmond.org.mt
+    languages: [mt, en]
+    hours:
+      type: custom
+      details: Mon–Fri 08:00–20:00; Sat until 16:00 (per Richmond Foundation; verify against gov source).
+    cost: free
+    operator: ngo_government_funded
+    operator_name: Richmond Foundation (signposted by health.gov.mt)
+    source:
+      name: Ministry for Health Malta — Mental Health Helpline 1579
+      url: https://health.gov.mt/mental-health-helpline1579/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: mt-1772-loneliness
+    name: OLLI Chat / Loneliness line 1772
+    categories: [mental_health]
+    contacts:
+      phone: "1772"
+    languages: [mt, en]
+    hours:
+      type: unknown
+    cost: free
+    target_population: people experiencing loneliness
+    operator: government
+    operator_name: Government of Malta
+    source:
+      name: Ministry for Health Malta — Mental Health Helpline 1579
+      url: https://health.gov.mt/mental-health-helpline1579/
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://health.gov.mt/mental-health-helpline1579/
+  notes: |
+    Added in Wave 2 of country expansion. Cited gov source: Ministry for Health Malta —
+    Mental Health Helpline 1579 page, with secondary signposting from Aġenzija Appoġġ (179)
+    and Richmond Foundation (1770). 1772 OLLI loneliness line listed as a government service.
+    Maintainer should re-verify each entry against the source page, then flip to verified.

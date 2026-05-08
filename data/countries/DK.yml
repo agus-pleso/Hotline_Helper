@@ -1,12 +1,91 @@
 country:
   iso_code: DK
   iso3: DNK
-  name: 'Denmark'
+  name: Denmark
   region: Europe
-emergency_services: []
-hotlines: []
+  subregion: Northern Europe
+
+emergency_services:
+  - name: European Emergency Number
+    phone: "112"
+  - name: Out-of-hours medical advice — Region Hovedstaden
+    phone: "1813"
+  - name: Out-of-hours medical advice — Region Sjælland
+    phone: "1818"
+  - name: Out-of-hours medical advice — Region Nordjylland
+    phone: "70 15 03 00"
+  - name: Out-of-hours medical advice — Region Midtjylland
+    phone: "70 11 31 31"
+  - name: Out-of-hours medical advice — Region Syddanmark
+    phone: "70 11 07 07"
+
+hotlines:
+  - id: dk-livslinien
+    name: Livslinien
+    categories: [suicide, crisis, mental_health]
+    contacts:
+      phone: "70 201 201"
+      chat_url: https://www.livslinien.dk
+      website: https://www.livslinien.dk
+    languages: [da]
+    hours:
+      type: custom
+      details: Daily 11:00–05:00 (CET/CEST), per livslinien.dk.
+    cost: free
+    operator: ngo_government_funded
+    operator_name: Livslinien (signposted by Sundhedsstyrelsen)
+    source:
+      name: Sundhedsstyrelsen — EN AF OS — Akut hjælp
+      url: https://www.sst.dk/en-af-os/akut-hjaelp
+      type: government
+      last_verified: 2026-05-08
+
+  - id: dk-bornetelefonen
+    name: BørneTelefonen
+    categories: [youth, child_abuse, mental_health, crisis]
+    contacts:
+      phone: "116 111"
+      chat_url: https://bornetelefonen.dk
+      website: https://bornetelefonen.dk
+    languages: [da]
+    hours:
+      type: custom
+      details: Mon–Thu 12:00–21:00, Fri 12:00–19:00 (CET/CEST).
+    cost: free
+    target_population: children and young people
+    operator: ngo_government_funded
+    operator_name: Børns Vilkår (signposted by Sundhedsstyrelsen)
+    source:
+      name: Sundhedsstyrelsen — EN AF OS — Akut hjælp
+      url: https://www.sst.dk/en-af-os/akut-hjaelp
+      type: government
+      last_verified: 2026-05-08
+
+  - id: dk-psykiatrifonden
+    name: Psykiatrifondens Rådgivning
+    categories: [mental_health]
+    contacts:
+      phone: "39 25 25 25"
+      website: https://psykiatrifonden.dk
+    languages: [da]
+    hours:
+      type: unknown
+    cost: free
+    operator: ngo
+    operator_name: Psykiatrifonden (signposted by Sundhedsstyrelsen)
+    source:
+      name: Sundhedsstyrelsen — EN AF OS — Akut hjælp
+      url: https://www.sst.dk/en-af-os/akut-hjaelp
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://www.sst.dk/en-af-os/akut-hjaelp
+  notes: |
+    Added in Wave 2 of country expansion. Cited gov source: Sundhedsstyrelsen
+    (Danish Health Authority) — "EN AF OS" Akut hjælp page — which signposts
+    Livslinien, BørneTelefonen, Psykiatrifonden, and the regional out-of-hours lines.
+    Maintainer should re-verify each entry against the source page, then flip to verified.

@@ -1,12 +1,107 @@
 country:
   iso_code: HR
   iso3: HRV
-  name: 'Croatia'
+  name: Croatia
   region: Europe
-emergency_services: []
-hotlines: []
+  subregion: Southern Europe
+
+emergency_services:
+  - name: European Emergency Number
+    phone: "112"
+  - name: Ambulance
+    phone: "194"
+
+hotlines:
+  - id: hr-hzjz-info
+    name: Služba za mentalno zdravlje HZJZ — informiranje i savjetovanje
+    categories: [mental_health, crisis]
+    contacts:
+      phone: "01 7815 652"
+      phone_alt: "+385 91 468 3067"
+      website: https://www.hzjz.hr/sluzba-za-mentalno-zdravlje/
+    languages: [hr]
+    hours:
+      type: business_hours
+      details: Mon–Fri 10:00–14:00 (CET/CEST).
+    cost: free
+    target_population: people seeking mental-health information and referrals
+    operator: government
+    operator_name: Hrvatski zavod za javno zdravstvo (HZJZ)
+    source:
+      name: HZJZ — Služba za mentalno zdravlje (informing and counselling)
+      url: https://www.hzjz.hr/sluzba-za-mentalno-zdravlje/informiranje-i-savjetovanje-o-uslugama-i-resursima-u-mentalnom-zdravlju/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: hr-hrabri-djecja
+    name: Hrabri telefon — dječja linija
+    categories: [crisis, youth, child_abuse]
+    contacts:
+      phone: "116 111"
+      chat_url: https://hrabritelefon.hr
+      website: https://hrabritelefon.hr
+    languages: [hr]
+    hours:
+      type: custom
+      details: Mon–Fri 09:00–20:00 (CET/CEST).
+    cost: free
+    target_population: children
+    operator: ngo_government_funded
+    operator_name: Hrabri telefon (signposted by HZJZ)
+    source:
+      name: HZJZ — Služba za mentalno zdravlje (informing and counselling)
+      url: https://www.hzjz.hr/sluzba-za-mentalno-zdravlje/informiranje-i-savjetovanje-o-uslugama-i-resursima-u-mentalnom-zdravlju/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: hr-hrabri-roditeljska
+    name: Hrabri telefon — roditeljska linija
+    categories: [crisis, mental_health]
+    contacts:
+      phone: "0800 0800"
+      website: https://hrabritelefon.hr
+    languages: [hr]
+    hours:
+      type: custom
+      details: Mon–Fri 09:00–20:00 (CET/CEST).
+    cost: free
+    target_population: parents and concerned adults
+    operator: ngo_government_funded
+    operator_name: Hrabri telefon (signposted by HZJZ)
+    source:
+      name: HZJZ — Služba za mentalno zdravlje (informing and counselling)
+      url: https://www.hzjz.hr/sluzba-za-mentalno-zdravlje/informiranje-i-savjetovanje-o-uslugama-i-resursima-u-mentalnom-zdravlju/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: hr-tesa
+    name: Centar TESA — Telefon za psihološku pomoć
+    categories: [mental_health, crisis]
+    contacts:
+      phone: "01 4828 888"
+      website: https://www.tesa.hr
+    languages: [hr]
+    hours:
+      type: custom
+      details: Weekdays 10:00–22:00 (CET/CEST).
+    cost: free
+    operator: ngo
+    operator_name: Centar TESA (signposted by HZJZ)
+    source:
+      name: HZJZ — Služba za mentalno zdravlje (informing and counselling)
+      url: https://www.hzjz.hr/sluzba-za-mentalno-zdravlje/informiranje-i-savjetovanje-o-uslugama-i-resursima-u-mentalnom-zdravlju/
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://www.hzjz.hr/sluzba-za-mentalno-zdravlje/informiranje-i-savjetovanje-o-uslugama-i-resursima-u-mentalnom-zdravlju/
+    - https://zdravlje.gov.hr/vijesti/mentalno-zdravlje-u-kriznim-situacijama/7210
+  notes: |
+    Added in Wave 2 of country expansion. Cited gov source: Hrvatski zavod za javno
+    zdravstvo (HZJZ — Croatian Institute of Public Health). Croatia does not have a single
+    state-run 24/7 suicide-prevention line that is signposted by HZJZ; the long-known
+    Plavi telefon (01 4833 888) is NOT listed on the HZJZ page so is intentionally omitted.
+    Maintainer should re-verify each entry against the source page, then flip to verified.

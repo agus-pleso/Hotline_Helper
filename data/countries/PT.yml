@@ -1,12 +1,101 @@
 country:
   iso_code: PT
   iso3: PRT
-  name: 'Portugal'
+  name: Portugal
   region: Europe
-emergency_services: []
-hotlines: []
+  subregion: Southern Europe
+
+emergency_services:
+  - name: European Emergency Number
+    phone: "112"
+
+hotlines:
+  - id: pt-1411-linha-prevencao-suicidio
+    name: Linha Nacional de Prevenção do Suicídio — 1411
+    categories: [suicide, crisis, mental_health]
+    contacts:
+      phone: "1411"
+      website: https://www.sns24.gov.pt/servico/linha-nacional-de-prevencao-do-suicidio/
+    languages: [pt]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: general
+    operator: government
+    operator_name: SNS / SPMS — Ministério da Saúde
+    notes: Launched September 2025 by SNS24 and the Portuguese Ministry of Health.
+    source:
+      name: SNS 24 — Linha Nacional de Prevenção do Suicídio
+      url: https://www.sns24.gov.pt/servico/linha-nacional-de-prevencao-do-suicidio/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: pt-sns24-808
+    name: SNS 24 — Aconselhamento Psicológico
+    categories: [mental_health, crisis]
+    contacts:
+      phone: "808 24 24 24"
+      website: https://www.sns24.gov.pt
+    languages: [pt]
+    hours:
+      type: 24/7
+    cost: free
+    operator: government
+    operator_name: SNS 24 / SPMS — Ministério da Saúde
+    notes: General SNS24 line; select the psychological-counselling option.
+    source:
+      name: SNS 24 — Linha Nacional de Prevenção do Suicídio
+      url: https://www.sns24.gov.pt/servico/linha-nacional-de-prevencao-do-suicidio/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: pt-sos-voz-amiga
+    name: SOS Voz Amiga
+    categories: [suicide, crisis, mental_health]
+    contacts:
+      phone: "213 544 545"
+      phone_alt: "912 802 669"
+      website: https://www.sosvozamiga.org
+    languages: [pt]
+    hours:
+      type: custom
+      details: Daily 15:30–00:30 (WET/WEST).
+    cost: free
+    operator: ngo
+    operator_name: SOS Voz Amiga (signposted by SNS24 / Ministério da Saúde)
+    source:
+      name: SNS 24 — Linha Nacional de Prevenção do Suicídio
+      url: https://www.sns24.gov.pt/servico/linha-nacional-de-prevencao-do-suicidio/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: pt-telefone-amizade
+    name: Telefone da Amizade
+    categories: [crisis, mental_health]
+    contacts:
+      phone: "228 323 535"
+      website: https://telefone-amizade.pt
+    languages: [pt]
+    hours:
+      type: custom
+      details: Daily 16:00–23:00 (WET/WEST).
+    cost: free
+    operator: ngo
+    operator_name: Telefone da Amizade (signposted by SNS24)
+    source:
+      name: SNS 24 — Linha Nacional de Prevenção do Suicídio
+      url: https://www.sns24.gov.pt/servico/linha-nacional-de-prevencao-do-suicidio/
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://www.sns24.gov.pt/servico/linha-nacional-de-prevencao-do-suicidio/
+    - https://www.spms.min-saude.pt
+  notes: |
+    Added in Wave 2 of country expansion. Cited gov source: SNS 24 (Serviço Nacional de Saúde)
+    and SPMS (Shared Services of the Ministry of Health). Linha 1411 is the new (Sep 2025)
+    primary government suicide-prevention line; SNS24 808 24 24 24 provides psychological
+    counselling. Maintainer should re-verify each entry against the source page, then flip to verified.

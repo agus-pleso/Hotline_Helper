@@ -1,12 +1,141 @@
 country:
   iso_code: BE
   iso3: BEL
-  name: 'Belgium'
+  name: Belgium
   region: Europe
-emergency_services: []
-hotlines: []
+  subregion: Western Europe
+
+emergency_services:
+  - name: European Emergency Number
+    phone: "112"
+
+hotlines:
+  - id: be-zelfmoordlijn-1813
+    name: Zelfmoordlijn 1813
+    categories: [suicide, crisis, mental_health]
+    contacts:
+      phone: "1813"
+      chat_url: https://www.zelfmoord1813.be
+      website: https://www.zelfmoord1813.be
+    languages: [nl]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: Dutch-speaking population (Flanders)
+    operator: ngo_government_funded
+    operator_name: Centrum ter Preventie van Zelfdoding (Flemish-government-supported)
+    notes: Phone available 24/7; chat daily 17:00–24:00, with extended Wednesday hours from 12:00.
+    source:
+      name: be.brussels — Psychological help (Brussels-Capital Region official portal)
+      url: https://be.brussels/en/assistance-social-health/assistance-individuals-and-families/psychological-help
+      type: government
+      last_verified: 2026-05-08
+
+  - id: be-centre-prevention-suicide
+    name: Centre de Prévention du Suicide
+    categories: [suicide, crisis, mental_health]
+    contacts:
+      phone: "0800 32 123"
+      website: https://www.preventionsuicide.be
+    languages: [fr]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: French-speaking population (Wallonia / Brussels)
+    operator: ngo_government_funded
+    operator_name: Centre de Prévention du Suicide (subsidised by COCOF)
+    source:
+      name: be.brussels — Psychological help (Brussels-Capital Region official portal)
+      url: https://be.brussels/en/assistance-social-health/assistance-individuals-and-families/psychological-help
+      type: government
+      last_verified: 2026-05-08
+
+  - id: be-tele-onthaal
+    name: Tele-Onthaal
+    categories: [crisis, mental_health]
+    contacts:
+      phone: "106"
+      chat_url: https://www.tele-onthaal.be
+      website: https://www.tele-onthaal.be
+    languages: [nl]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: Dutch-speaking population
+    operator: ngo_government_funded
+    operator_name: Tele-Onthaal (signposted by be.brussels)
+    source:
+      name: be.brussels — Psychological help (Brussels-Capital Region official portal)
+      url: https://be.brussels/en/assistance-social-health/assistance-individuals-and-families/psychological-help
+      type: government
+      last_verified: 2026-05-08
+
+  - id: be-tele-accueil
+    name: Télé-Accueil
+    categories: [crisis, mental_health]
+    contacts:
+      phone: "107"
+      chat_url: https://www.tele-accueil-bruxelles.be
+      website: https://www.tele-accueil-bruxelles.be
+    languages: [fr]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: French-speaking population
+    operator: ngo_government_funded
+    operator_name: Télé-Accueil (signposted by be.brussels)
+    source:
+      name: be.brussels — Psychological help (Brussels-Capital Region official portal)
+      url: https://be.brussels/en/assistance-social-health/assistance-individuals-and-families/psychological-help
+      type: government
+      last_verified: 2026-05-08
+
+  - id: be-chs-english
+    name: Community Help Service (CHS)
+    categories: [crisis, mental_health]
+    contacts:
+      phone: "+32 2 648 40 14"
+      website: https://www.chsbelgium.org
+    languages: [en]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: English-speaking residents
+    operator: ngo
+    operator_name: CHS Belgium (signposted by be.brussels)
+    source:
+      name: be.brussels — Psychological help (Brussels-Capital Region official portal)
+      url: https://be.brussels/en/assistance-social-health/assistance-individuals-and-families/psychological-help
+      type: government
+      last_verified: 2026-05-08
+
+  - id: be-sos-viol
+    name: S.O.S Viol
+    categories: [sexual_assault]
+    contacts:
+      phone: "+32 2 534 36 36"
+      website: https://www.sosviol.be
+    languages: [fr]
+    hours:
+      type: unknown
+    cost: free
+    target_population: victims of sexual assault
+    operator: ngo_government_funded
+    operator_name: S.O.S Viol (signposted by be.brussels)
+    source:
+      name: be.brussels — Psychological help (Brussels-Capital Region official portal)
+      url: https://be.brussels/en/assistance-social-health/assistance-individuals-and-families/psychological-help
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://be.brussels/en/assistance-social-health/assistance-individuals-and-families/psychological-help
+  notes: |
+    Added in Wave 2 of country expansion. Cited gov source: be.brussels — the Brussels-Capital
+    Region official portal's Psychological help page. Federal Belgium delegates mental-health
+    policy to the linguistic communities/regions, so this regional gov portal is the highest-level
+    authoritative consolidation of crisis lines available.
+    Maintainer should re-verify each entry against the source page, then flip to verified.

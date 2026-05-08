@@ -1,12 +1,142 @@
 country:
   iso_code: LT
   iso3: LTU
-  name: 'Lithuania'
+  name: Lithuania
   region: Europe
-emergency_services: []
-hotlines: []
+  subregion: Northern Europe
+
+emergency_services:
+  - name: European Emergency Number
+    phone: "112"
+
+hotlines:
+  - id: lt-vilties-linija
+    name: Vilties linija
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "116 123"
+      chat_url: https://www.viltieslinija.lt
+      website: https://www.viltieslinija.lt
+    languages: [lt]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo
+    operator_name: Klaipėdos Socialinės-Psichologinės Pagalbos Centras (signposted by Pagalbasau.lt)
+    source:
+      name: Pagalbasau.lt — Pagalbos linijos
+      url: https://pagalbasau.lt/pagalbos-linijos/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: lt-jaunimo-linija
+    name: Jaunimo linija
+    categories: [suicide, mental_health, crisis, youth]
+    contacts:
+      phone: "8 800 28888"
+      chat_url: https://jaunimolinija.lt
+      website: https://jaunimolinija.lt
+    languages: [lt]
+    hours:
+      type: 24/7
+      details: Phone 24/7; chat 18:00–24:00 (EET/EEST).
+    cost: free
+    target_population: young people
+    operator: ngo
+    operator_name: Jaunimo linija (signposted by Pagalbasau.lt)
+    source:
+      name: Pagalbasau.lt — Pagalbos linijos
+      url: https://pagalbasau.lt/pagalbos-linijos/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: lt-vaiku-linija
+    name: Vaikų linija
+    categories: [crisis, youth, child_abuse]
+    contacts:
+      phone: "116 111"
+      chat_url: https://vaikulinija.lt
+      website: https://vaikulinija.lt
+    languages: [lt, en]
+    hours:
+      type: custom
+      details: Daily 11:00–23:00 (EET/EEST).
+    cost: free
+    target_population: children and youth (under 18)
+    operator: ngo_government_funded
+    operator_name: VšĮ Vaikų linija (signposted by Pagalbasau.lt)
+    source:
+      name: Pagalbasau.lt — Pagalbos linijos
+      url: https://pagalbasau.lt/pagalbos-linijos/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: lt-pagalbos-moterims
+    name: Pagalbos moterims linija
+    categories: [domestic_violence, crisis]
+    contacts:
+      phone: "8 800 66366"
+      website: https://www.moteriai.lt
+    languages: [lt]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: women
+    operator: ngo
+    operator_name: Pagalbos moterims linija (signposted by Pagalbasau.lt)
+    source:
+      name: Pagalbasau.lt — Pagalbos linijos
+      url: https://pagalbasau.lt/pagalbos-linijos/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: lt-tevu-linija
+    name: Tėvų linija
+    categories: [crisis, mental_health]
+    contacts:
+      phone: "8 800 90012"
+      website: https://tevulinija.lt
+    languages: [lt]
+    hours:
+      type: custom
+      details: Mon–Fri 09:00–13:00 and 17:00–21:00 (EET/EEST).
+    cost: free
+    target_population: parents in crisis
+    operator: ngo
+    operator_name: Tėvų linija (Paramos vaikams centras)
+    source:
+      name: Pagalbasau.lt — Pagalbos linijos
+      url: https://pagalbasau.lt/pagalbos-linijos/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: lt-sidabrine-linija
+    name: Sidabrinė linija
+    categories: [mental_health, crisis, elder_abuse]
+    contacts:
+      phone: "8 800 80020"
+      website: https://sidabrinelinija.lt
+    languages: [lt]
+    hours:
+      type: custom
+      details: Mon–Fri 08:00–22:00, Sat–Sun 11:00–19:00 (EET/EEST).
+    cost: free
+    target_population: seniors
+    operator: ngo
+    operator_name: Sidabrinė linija (signposted by Pagalbasau.lt)
+    source:
+      name: Pagalbasau.lt — Pagalbos linijos
+      url: https://pagalbasau.lt/pagalbos-linijos/
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://pagalbasau.lt/pagalbos-linijos/
+  notes: |
+    Added in Wave 2 of country expansion. Cited gov source: Pagalbasau.lt — a state-launched
+    portal initiated by the Lithuanian Ministry of Health (SAM) and run by the Mental Health
+    Center of the Hygiene Institute (Higienos institutas, a state institution under SAM).
+    Maintainer should re-verify each entry against the source page, then flip to verified.
