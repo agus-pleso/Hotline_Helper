@@ -1,12 +1,63 @@
 country:
   iso_code: AT
   iso3: AUT
-  name: 'Austria'
+  name: Austria
   region: Europe
-emergency_services: []
-hotlines: []
+  subregion: Western Europe
+
+emergency_services:
+  - name: European Emergency Number
+    phone: "112"
+
+hotlines:
+  - id: at-142-telefonseelsorge
+    name: TelefonSeelsorge — Notruf 142
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "142"
+      chat_url: https://onlineberatung-telefonseelsorge.at
+      website: https://www.telefonseelsorge.at
+    languages: [de]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo_government_funded
+    operator_name: TelefonSeelsorge Österreich (signposted by gesundheit.gv.at)
+    notes: |
+      Free, anonymous, and confidential. Phone available 24/7; webchat typically
+      runs daily 16:00–23:00 (CET/CEST). Operated by trained volunteer counsellors.
+    source:
+      name: Gesundheitsportal — Notrufnummern bei Krise und Suizidgefahr
+      url: https://www.gesundheit.gv.at/leben/suizidpraevention/anlaufstellen/notrufnummern.html
+      type: government
+      last_verified: 2026-05-08
+
+  - id: at-147-rat-auf-draht
+    name: 147 Rat auf Draht
+    categories: [youth, crisis, mental_health]
+    contacts:
+      phone: "147"
+      chat_url: https://www.rataufdraht.at
+      website: https://www.rataufdraht.at
+    languages: [de]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: children, adolescents, and their parents
+    operator: ngo_government_funded
+    operator_name: SOS-Kinderdorf — 147 Rat auf Draht (signposted by gesundheit.gv.at)
+    source:
+      name: Gesundheitsportal — Notrufnummern bei Krise und Suizidgefahr
+      url: https://www.gesundheit.gv.at/leben/suizidpraevention/anlaufstellen/notrufnummern.html
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://www.gesundheit.gv.at/leben/suizidpraevention/anlaufstellen/notrufnummern.html
+    - https://www.sozialministerium.gv.at/Services/Aktuelles/Archiv-2025/Notrufnummern-bei-Krise-und-Suizidgefahr.html
+  notes: |
+    Added in Wave 1 of country expansion. Cited gov sources: Gesundheitsportal (gesundheit.gv.at, Austrian government health portal) and Sozialministerium (Ministry of Social Affairs) crisis-numbers page, both listing TelefonSeelsorge 142 and Rat auf Draht 147.
+    Maintainer should re-verify each entry against the source page, then flip to verified.

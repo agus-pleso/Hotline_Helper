@@ -1,12 +1,69 @@
 country:
   iso_code: CH
   iso3: CHE
-  name: 'Switzerland'
+  name: Switzerland
   region: Europe
-emergency_services: []
-hotlines: []
+  subregion: Western Europe
+
+emergency_services:
+  - name: European Emergency Number
+    phone: "112"
+  - name: Police
+    phone: "117"
+  - name: Ambulance
+    phone: "144"
+
+hotlines:
+  - id: ch-143-die-dargebotene-hand
+    name: Die Dargebotene Hand 143
+    aliases:
+      - La Main Tendue
+      - Telefono Amico
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "143"
+      chat_url: https://www.143.ch
+      website: https://www.143.ch
+    languages: [de, fr, it]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo_government_funded
+    operator_name: Verband Die Dargebotene Hand (signposted by BAG)
+    notes: |
+      Available in German, French, and Italian. Calls are confidential and free of charge.
+      Anonymous email and chat counselling are also offered via the website.
+    source:
+      name: Bundesamt für Gesundheit (BAG) — Action plan on suicide prevention
+      url: https://www.bag.admin.ch/en/action-plan-on-suicide-prevention
+      type: government
+      last_verified: 2026-05-08
+
+  - id: ch-143-en-heart2heart
+    name: Heart2Heart — English support line
+    categories: [suicide, mental_health, crisis]
+    contacts:
+      phone: "0800 143 000"
+      website: https://www.143.ch/en/
+    languages: [en]
+    hours:
+      details: Daily 18:00–23:00 (CET/CEST)
+    cost: free
+    target_population: English-speaking residents in Switzerland
+    operator: ngo_government_funded
+    operator_name: Verband Die Dargebotene Hand
+    source:
+      name: Bundesamt für Gesundheit (BAG) — Action plan on suicide prevention
+      url: https://www.bag.admin.ch/en/action-plan-on-suicide-prevention
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://www.bag.admin.ch/en/action-plan-on-suicide-prevention
+    - https://www.143.ch
+  notes: |
+    Added in Wave 1 of country expansion. Cited gov source: Bundesamt für Gesundheit (BAG, Federal Office of Public Health) — action plan on suicide prevention page, which endorses Die Dargebotene Hand 143 and the English Heart2Heart line.
+    Maintainer should re-verify each entry against the source page, then flip to verified.

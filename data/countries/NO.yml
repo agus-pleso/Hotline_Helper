@@ -1,12 +1,103 @@
 country:
   iso_code: "NO"
   iso3: NOR
-  name: 'Norway'
+  name: Norway
   region: Europe
-emergency_services: []
-hotlines: []
+  subregion: Northern Europe
+
+emergency_services:
+  - name: Medical Emergency
+    phone: "113"
+    notes: "Critical / life-threatening situations."
+  - name: Out-of-Hours Medical Centre (Legevakt)
+    phone: "116 117"
+    notes: Less urgent medical / mental-health support.
+
+hotlines:
+  - id: no-mental-helse
+    name: Mental Helse Hjelpetelefonen
+    categories: [mental_health, crisis, suicide]
+    contacts:
+      phone: "116 123"
+      chat_url: https://mentalhelse.no
+      website: https://mentalhelse.no
+    languages: ["no"]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo_government_funded
+    operator_name: Mental Helse (signposted by Helsenorge / Norsk helsenett)
+    source:
+      name: Helsenorge — Help if you are struggling with mental health
+      url: https://www.helsenorge.no/en/psykisk-helse/help-if-you-are-struggling-with-mental-health/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: no-kirkens-sos
+    name: Kirkens SOS
+    categories: [crisis, mental_health]
+    contacts:
+      phone: "22 40 00 40"
+      chat_url: https://kirkens-sos.no
+      website: https://kirkens-sos.no
+    languages: ["no"]
+    hours:
+      type: 24/7
+    cost: free
+    operator: ngo
+    operator_name: Kirkens SOS (signposted by Helsenorge)
+    source:
+      name: Helsenorge — Help if you are struggling with mental health
+      url: https://www.helsenorge.no/en/psykisk-helse/help-if-you-are-struggling-with-mental-health/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: no-alarmtelefonen
+    name: Alarmtelefonen for barn og unge
+    categories: [youth, child_abuse, crisis]
+    contacts:
+      phone: "116 111"
+      chat_url: https://www.116111.no
+      website: https://www.116111.no
+    languages: ["no"]
+    hours:
+      type: 24/7
+    cost: free
+    target_population: children and young people
+    operator: government
+    operator_name: Bufdir (Norwegian Directorate for Children, Youth and Family Affairs)
+    source:
+      name: Helsenorge — Help if you are struggling with mental health
+      url: https://www.helsenorge.no/en/psykisk-helse/help-if-you-are-struggling-with-mental-health/
+      type: government
+      last_verified: 2026-05-08
+
+  - id: no-kors-pa-halsen
+    name: Kors på halsen
+    categories: [youth, mental_health, crisis]
+    contacts:
+      phone: "800 333 21"
+      chat_url: https://korspaahalsen.rodekors.no
+      website: https://korspaahalsen.rodekors.no
+    languages: ["no"]
+    hours:
+      details: Mon–Fri 14:00–22:00 CET (per Norwegian Red Cross)
+    cost: free
+    target_population: children and young people up to 18
+    operator: ngo
+    operator_name: Norwegian Red Cross (signposted by Helsenorge)
+    source:
+      name: Helsenorge — Help if you are struggling with mental health
+      url: https://www.helsenorge.no/en/psykisk-helse/help-if-you-are-struggling-with-mental-health/
+      type: government
+      last_verified: 2026-05-08
+
 metadata:
   last_updated: 2026-05-08
-  verification_status: no_government_source
-  data_sources: []
-  notes: 'No government-published crisis hotline list has been identified for this country yet. Contributions welcome - see CONTRIBUTING.md.'
+  verification_status: unverified
+  data_sources:
+    - https://www.helsenorge.no/en/psykisk-helse/help-if-you-are-struggling-with-mental-health/
+  notes: |
+    Added in Wave 1 of country expansion. Cited gov source: Helsenorge (Norwegian Government health portal),
+    which lists Mental Helse 116 123, Kirkens SOS, Alarmtelefonen 116 111, and Kors på halsen 800 333 21.
+    Maintainer should re-verify the source page still backs each entry, then flip to verified.
