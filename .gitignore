@@ -55,3 +55,6 @@ dist/api/
 # Local override
 .env
 .env.local
+
+# Claude Code session state
+.claude/
